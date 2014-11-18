@@ -2,6 +2,7 @@
 \usepackage[english]{babel}
 \usepackage[ansinew]{inputenc}
 \usepackage{graphicx}
+\usepackage{listings}
 \pagestyle{headings}
 
 \begin{document}
@@ -39,6 +40,7 @@ Consequently, this leads to a more specialized way of analyzing the cells, which
 does not do all the analysis performed by CellProfiler, but on the other hand is
 much faster and thus helps to prevent cells dying before the analysis is
 finished.
+
 \begin{figure}[h]
     \includegraphics[width=\linewidth]{images/cellprofiler_channel1}
     \caption{Example analysis performed with CellProfiler}
@@ -49,6 +51,73 @@ finished.
 \section{Design and Implementation}
 
 \subsection{Requirements}
+The application has to meet the following requirements:
+\begin{itemize}
+  \item \textbf{Reliable nucleoli detection:} Stable and reliable detection of
+  nucleoli is the main purpose of the application. Hence, it is supposed to
+  detect at least 75\% of the nucleoli CellProfiler can detect. This includes
+  a certain degree of stability concerning fuzzy pictures or pictures with
+  inequally distributed or diffuse brightnes.
+  \item \textbf{Fast analysis:} As the application is tailored to this single
+  task, it is expected to detect a suitable amount of nucleoli in only a small
+  fraction of the time required by CellProfiler. The topmost time that the
+  application may require to complete the analysis of one image is five seconds.
+  \item \textbf{Fallback in case of empty nuclei:} Each nucleus is expected to
+  containg at least one nucleolus. Yet, this expectation cannot always be
+  fulfilled due to potentially damaged nuclei, fuzzy images, or other reasons.
+  In this case, the center of the nucleus has to be provided as fallback target.
+  \item \textbf{Visualizer:} In order to quickly check the results directly
+  after running the analysis and to provide a way to quickly present the results
+  to a potential audience, the application has to provide the possibility to be
+  configured so that it shows the results as an image. This image has to contain
+  all detected neuleoli targets, fallback targets and the regions of interest,
+  e.g. the nuclei.
+  \item \textbf{Versatility:} Since the appearance of different specimen can
+  vary in various ways, all analysis parameters have to be configurable. Among
+  others, this includes the minimum and maximum sizes of nuclei and nucleoli.
+  The configuration is supposed to be achieved via an understandable,
+  interchangeable, text-based file\footnote{Configurable parameters are
+  explained in detail in the User's Manual section}.
+  \item \textbf{Statistics:} To determine the most suitable parameters for
+  different kinds of specimen, another feature may be configured. This
+  statistics feature has to include:
+  \begin{itemize}
+    \item The amount of detected nuclei
+    \item The amount of detected nucleoli
+    \item Nuclei to nucleoli ratio as percentage
+    \item The distance of each detected nucleolus to the center point of the
+    containing nuclei and the average distance in pixels
+    \item The area of each detected nucleus and the average area in square
+    pixels
+    \item The area of each detected nucleolus and the average area in square
+    pixels
+  \end{itemize}
+  \item \textbf{Serialization of the results:} All results have to be stored in
+  their accordant files in a subfolder \textit{results} of the folder
+  containing the original data
+  \begin{itemize}
+  	\item Targets 
+  	\begin{lstlisting}
+  		# nucleoli targets
+		1 : [468, 43]
+		2 : [1183, 14]
+		3 : [1004, 128]
+		4 : [260, 136]
+		5 : [599, 279]
+		6 : [1015, 501]
+		7 : [902, 588]
+		8 : [693, 689]
+		9 : [881, 979]
+		# targets in center of empty nuclei
+		10 : [87, 174]
+		11 : [769, 198]
+		12 : [1240, 338]
+		13 : [392, 559]
+  	\end{lstlisting}
+  	\item Statistics
+  	\item Image as it would be displayed by the visualizer.
+  \end{itemize}
+\end{itemize}
 
 \newpage
 \section{User's Manual}

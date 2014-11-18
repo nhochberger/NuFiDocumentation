@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  18 NOV 2014 23:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  19 NOV 2014 00:41
 entering extended mode
 **document.tex
 (F:\workspace\NuFiDocumentation\document.tex
@@ -91,40 +91,66 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
+(e:\Tools\MiKTeX\tex\latex\listings\listings.sty
+\lst@mode=\count89
+\lst@gtempboxa=\box26
+\lst@token=\toks17
+\lst@length=\count90
+\lst@currlwidth=\dimen106
+\lst@column=\count91
+\lst@pos=\count92
+\lst@lostspace=\dimen107
+\lst@width=\dimen108
+\lst@newlines=\count93
+\lst@lineno=\count94
+\lst@maxwidth=\dimen109
+
+(e:\Tools\MiKTeX\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
+\lst@framebox=\box27
+)
+(e:\Tools\MiKTeX\tex\latex\listings\listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
 (F:\workspace\NuFiDocumentation\document.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 (e:\Tools\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
-\scratchdimen=\dimen106
-\scratchbox=\box26
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count92
-\MPscratchDim=\dimen107
-\MPnumerator=\count93
-\makeMPintoPDFobject=\count94
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count97
+\scratchdimen=\dimen110
+\scratchbox=\box28
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen111
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks19
 )
+\c@lstlisting=\count103
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
+(Font)              <6> on input line 14.
  [1
 
 {C:/Users/Nico/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -135,32 +161,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 27.
+(Font)              <9> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 27.
+(Font)              <5> on input line 28.
 
 <images/cellprofiler_channel1.png, id=14, 1393.205pt x 1043.9pt>
 File: images/cellprofiler_channel1.png Graphic file (type png)
 
 <use images/cellprofiler_channel1.png>
-Package pdftex.def Info: images/cellprofiler_channel1.png used on input line 43
+Package pdftex.def Info: images/cellprofiler_channel1.png used on input line 45
 .
 (pdftex.def)             Requested size: 360.0pt x 269.73509pt.
  [3 <F:/workspace/NuFiDocumentation/images/cellprofiler_channel1.png (PNG copy)
->] [4] [5] [6]
-(F:\workspace\NuFiDocumentation\document.bbl
+>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
+
+(e:\Tools\MiKTeX\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
+ [4]
+Overfull \hbox (26.53857pt too wide) in paragraph at lines 111--112
+[][][][][][][][][][][][][][][][] 
+ []
+
+[5] [6] [7] (F:\workspace\NuFiDocumentation\document.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
-) [7] (F:\workspace\NuFiDocumentation\document.aux) ) 
+) [8] (F:\workspace\NuFiDocumentation\document.aux) ) 
 Here is how much of TeX's memory you used:
- 1515 strings out of 493921
- 19422 string characters out of 3152096
- 73873 words of memory out of 3000000
- 4821 multiletter control sequences out of 15000+200000
- 10076 words of font info for 35 fonts, out of 3000000 for 9000
+ 3132 strings out of 493921
+ 40539 string characters out of 3152096
+ 101466 words of memory out of 3000000
+ 6422 multiletter control sequences out of 15000+200000
+ 10422 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,8n,19p,240b,218s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,32p,241b,1098s stack positions out of 5000i,500n,10000p,200000b,50000s
 <e:/Tools/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmbx10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmbx12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Tool
@@ -168,10 +206,11 @@ s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/Tools/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmr17.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 r6.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Tools/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/Tools/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsl10.pfb>
-Output written on document.pdf (7 pages, 1070736 bytes).
+msfonts/cm/cmsl10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (8 pages, 1097539 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
