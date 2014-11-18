@@ -1,6 +1,7 @@
 \documentclass[a4paper, 11pt]{article}
 \usepackage[english]{babel}
 \usepackage[ansinew]{inputenc}
+\usepackage{graphicx}
 \pagestyle{headings}
 
 \begin{document}
@@ -22,8 +23,9 @@
 \subsection{Objective}
 
 \subsection{Motivation}
-Currently nucleoli are detected using an application called CellProfiler. While
-this application yields reliable results, it also takes pretty long to complete
+Currently nucleoli are detected using an application called
+CellProfiler\footnote{http://www.cellprofiler.org}.
+While this application yields reliable results, it also takes pretty long to complete
 the analysis. Runtimes up to 45 seconds are common.
 Due to the fact that CellProfiler is a very general approach, applicable to a
 large variety of tasks related to detecting nuclei and nucleoli, the results of
@@ -35,7 +37,13 @@ Considering this, time is a valuable resource and must not be wasted by using a
 too general approach.
 Consequently, this leads to a more specialized way of analyzing the cells, which
 does not do all the analysis performed by CellProfiler, but on the other hand is
-much faster.
+much faster and thus helps to prevent cells dying before the analysis is
+finished.
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{images/cellprofiler_channel1}
+    \caption{Example analysis performed with CellProfiler}
+    \label{fig:cellprofiler_example}
+\end{figure}
 
 \newpage
 \section{Design and Implementation}

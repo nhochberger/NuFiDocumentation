@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  18 NOV 2014 17:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  18 NOV 2014 23:15
 entering extended mode
 **document.tex
 (F:\workspace\NuFiDocumentation\document.tex
@@ -59,25 +59,72 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 (e:\Tools\MiKTeX\tex\latex\base\ansinew.def
 File: ansinew.def 2008/03/30 v1.1d Input encoding file
 ))
+(e:\Tools\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(e:\Tools\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(e:\Tools\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(e:\Tools\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(e:\Tools\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(e:\Tools\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(e:\Tools\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(e:\Tools\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
 (F:\workspace\NuFiDocumentation\document.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+(e:\Tools\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen106
+\scratchbox=\box26
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen107
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks18
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
+(Font)              <6> on input line 13.
  [1
 
 {C:/Users/Nico/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -87,33 +134,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 )
 \tf@toc=\write3
  [2]
-Overfull \hbox (3.74321pt too wide) in paragraph at lines 25--39
-[]\OT1/cmr/m/n/10.95 Currently nu-cle-oli are de-tected us-ing an ap-pli-ca-tio
-n called Cell-Pro-filer. While
- []
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 27.
 
-[3] [4] [5] [6] (F:\workspace\NuFiDocumentation\document.bbl
+<images/cellprofiler_channel1.png, id=14, 1393.205pt x 1043.9pt>
+File: images/cellprofiler_channel1.png Graphic file (type png)
+
+<use images/cellprofiler_channel1.png>
+Package pdftex.def Info: images/cellprofiler_channel1.png used on input line 43
+.
+(pdftex.def)             Requested size: 360.0pt x 269.73509pt.
+ [3 <F:/workspace/NuFiDocumentation/images/cellprofiler_channel1.png (PNG copy)
+>] [4] [5] [6]
+(F:\workspace\NuFiDocumentation\document.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
 ) [7] (F:\workspace\NuFiDocumentation\document.aux) ) 
 Here is how much of TeX's memory you used:
- 606 strings out of 493921
- 7308 string characters out of 3152096
- 60557 words of memory out of 3000000
- 3949 multiletter control sequences out of 15000+200000
- 9164 words of font info for 32 fonts, out of 3000000 for 9000
+ 1515 strings out of 493921
+ 19422 string characters out of 3152096
+ 73873 words of memory out of 3000000
+ 4821 multiletter control sequences out of 15000+200000
+ 10076 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 24i,6n,19p,190b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,19p,240b,218s stack positions out of 5000i,500n,10000p,200000b,50000s
 <e:/Tools/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmbx10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmbx12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Tool
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/Tools/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmr17.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sl10.pfb>
-Output written on document.pdf (7 pages, 91850 bytes).
+r6.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Tools/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/Tools/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsl10.pfb>
+Output written on document.pdf (7 pages, 1070736 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
