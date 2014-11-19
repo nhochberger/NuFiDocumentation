@@ -120,51 +120,13 @@ The application has to meet the following requirements:
 \end{lstlisting}
   	\item \textbf{Statistics:} The statistics as mentioned above have to be
   	stored in a txt-file named   
-  	\textit{statistics\_$\langle$timestamp$\rangle$.txt}.
-
-  	\textbf{Example:}
-\begin{lstlisting}[frame=single, caption=Example of statistics file]
-
-Nuclei count: 
-	13
-
-Target count: 
-	9
-
-Nuclei to target ratio: 
-	69.23%
-
-Mean distance: 
-	25.24 pixels
-
-Distances [pixels]: 
-	12.419742348374221
-	44.04543109109048
-	...
-
-Mean area of detected nuclei: 
-	12070.77 pixel^2
-
-Nucleus areas [pixels^2]: 
-	9503.0
-	7386.0
-	...
-
-Mean area of detected nucleoli: 
-	149.06 pixel^2
-
-Nucleolus areas (of all detected nucleoli)
-								[pixels^2]: 
-	240.0
-	170.0
-	...
-\end{lstlisting}
+  	\textit{statistics\_$\langle$timestamp$\rangle$.txt}. An example of the
+  	statistics file can be found in the appendix.
   	\item \textbf{Result image:} The image as it would be displayed by the
   	visualizer has to be stored to a file named
   	\textit{targets\_$\langle$timestamp$\rangle$.$\langle$original
-  	image filetype$\rangle$}.
-
-  	\textbf{Example:}
+  	image filetype$\rangle$}. See Figure \ref{fig:target_image_example} for an
+  	example the image. 
   	\begin{figure}[h]
 	    \includegraphics[width=\linewidth]{images/targets_example}
 	    \caption{Example of the image containing the results}
@@ -178,6 +140,7 @@ Nucleolus areas (of all detected nucleoli)
   application will be developed using Java.
 \end{itemize}
 \newpage
+
 \section{User's Manual}
 
 \subsection{System Requirements}
