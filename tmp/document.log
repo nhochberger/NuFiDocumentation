@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  19 NOV 2014 00:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  19 NOV 2014 22:37
 entering extended mode
 **document.tex
 (F:\workspace\NuFiDocumentation\document.tex
@@ -116,6 +116,11 @@ File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
+(e:\Tools\MiKTeX\tex\latex\lstaddons\lstautogobble.sty
+Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'list
+ings'
+\lstag@spacecount=\count97
+)
 (F:\workspace\NuFiDocumentation\document.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -132,19 +137,19 @@ LaTeX Font Info:    ... okay on input line 8.
 
 (e:\Tools\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count97
+\scratchcounter=\count98
 \scratchdimen=\dimen110
 \scratchbox=\box28
-\nofMPsegments=\count98
-\nofMParguments=\count99
+\nofMPsegments=\count99
+\nofMParguments=\count100
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count100
+\MPscratchCnt=\count101
 \MPscratchDim=\dimen111
-\MPnumerator=\count101
-\makeMPintoPDFobject=\count102
+\MPnumerator=\count102
+\makeMPintoPDFobject=\count103
 \everyMPtoPDFconversion=\toks19
 )
-\c@lstlisting=\count103
+\c@lstlisting=\count104
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -182,35 +187,56 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
  [4]
-Overfull \hbox (26.53857pt too wide) in paragraph at lines 111--112
-[][][][][][][][][][][][][][][][] 
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 105.
+
+
+(e:\Tools\MiKTeX\tex\latex\base\omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 105.
+ [5]
+Overfull \hbox (184.22021pt too wide) in paragraph at lines 157--158
+[][][][][][] 
  []
 
-[5] [6] [7] (F:\workspace\NuFiDocumentation\document.bbl
+<images/targets_example.png, id=30, 1393.205pt x 1043.9pt>
+File: images/targets_example.png Graphic file (type png)
+
+<use images/targets_example.png>
+Package pdftex.def Info: images/targets_example.png used on input line 169.
+(pdftex.def)             Requested size: 360.0pt x 269.73509pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7 <F:/workspace/NuFiDocumentation/images/targets_example.png (PNG copy)>]
+[8] (F:\workspace\NuFiDocumentation\document.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
-) [8] (F:\workspace\NuFiDocumentation\document.aux) ) 
+) [9] (F:\workspace\NuFiDocumentation\document.aux) ) 
 Here is how much of TeX's memory you used:
- 3132 strings out of 493921
- 40539 string characters out of 3152096
- 101466 words of memory out of 3000000
- 6422 multiletter control sequences out of 15000+200000
+ 3186 strings out of 493921
+ 41570 string characters out of 3152096
+ 108790 words of memory out of 3000000
+ 6468 multiletter control sequences out of 15000+200000
  10422 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,8n,32p,241b,1098s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,32p,256b,1731s stack positions out of 5000i,500n,10000p,200000b,50000s
 <e:/Tools/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmbx10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Tool
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/Tools/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr17.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r6.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Tools/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/Tools/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsl10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (8 pages, 1097539 bytes).
+m/cmbx12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/Too
+ls/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Tools/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr17.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><e:/Tools/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Tools/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr9.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pf
+b><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Tools/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (9 pages, 2219474 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
