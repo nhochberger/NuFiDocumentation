@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  20 NOV 2014 15:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  20 NOV 2014 16:38
 entering extended mode
 **document.tex
 (F:\workspace\NuFiDocumentation\document.tex
@@ -207,27 +207,22 @@ Package pdftex.def Info: images/targets_example.png used on input line 132.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
-[][]\OT1/cmr/m/n/9 Details on the sys-tem re-quire-ments can be found at:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
-\OT1/cmr/m/n/9 https://docs.oracle.com/javase/7/docs/webnotes/install/windows/w
-indows-system-
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[][]\OT1/cmr/m/n/9 Further de-tails on the sys-tem re-quire-ments can be found 
+at:
  []
 
 [6 <F:/workspace/NuFiDocumentation/images/targets_example.png (PNG copy)>]
-[7] (F:\workspace\NuFiDocumentation\document.bbl
+[7] [8] (F:\workspace\NuFiDocumentation\document.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
-) [8] (F:\workspace\NuFiDocumentation\document.aux) ) 
+) [9] (F:\workspace\NuFiDocumentation\document.aux) ) 
 Here is how much of TeX's memory you used:
- 3184 strings out of 493921
- 41537 string characters out of 3152096
- 104790 words of memory out of 3000000
- 6466 multiletter control sequences out of 15000+200000
+ 3185 strings out of 493921
+ 41568 string characters out of 3152096
+ 104798 words of memory out of 3000000
+ 6467 multiletter control sequences out of 15000+200000
  10422 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,8n,32p,256b,1384s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -241,9 +236,9 @@ TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Tools/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmr9.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pf
 b><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Tools/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (8 pages, 2220212 bytes).
+Output written on document.pdf (9 pages, 2221410 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
