@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  20 NOV 2014 16:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  20 NOV 2014 23:49
 entering extended mode
 **document.tex
 (F:\workspace\NuFiDocumentation\document.tex
@@ -165,80 +165,86 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 )
 \tf@toc=\write3
  [2]
+(F:\workspace\NuFiDocumentation\document.lof)
+\tf@lof=\write4
+ [3]
+(F:\workspace\NuFiDocumentation\document.lot)
+\tf@lot=\write5
+ [4]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 28.
+(Font)              <9> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 28.
+(Font)              <5> on input line 34.
 
-<images/cellprofiler_channel1.png, id=14, 1393.205pt x 1043.9pt>
+<images/cellprofiler_channel1.png, id=20, 1393.205pt x 1043.9pt>
 File: images/cellprofiler_channel1.png Graphic file (type png)
 
 <use images/cellprofiler_channel1.png>
-Package pdftex.def Info: images/cellprofiler_channel1.png used on input line 46
+Package pdftex.def Info: images/cellprofiler_channel1.png used on input line 52
 .
 (pdftex.def)             Requested size: 360.0pt x 269.73509pt.
- [3 <F:/workspace/NuFiDocumentation/images/cellprofiler_channel1.png (PNG copy)
+ [5 <F:/workspace/NuFiDocumentation/images/cellprofiler_channel1.png (PNG copy)
 >]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
 
 (e:\Tools\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
- [4]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 106.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+ [6]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 112.
 
 
 (e:\Tools\MiKTeX\tex\latex\base\omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 106.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 112.
 
-<images/targets_example.png, id=25, 1393.205pt x 1043.9pt>
+<images/targets_example.png, id=31, 1393.205pt x 1043.9pt>
 File: images/targets_example.png Graphic file (type png)
 
 <use images/targets_example.png>
-Package pdftex.def Info: images/targets_example.png used on input line 132.
+Package pdftex.def Info: images/targets_example.png used on input line 138.
 (pdftex.def)             Requested size: 360.0pt x 269.73509pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
 [][]\OT1/cmr/m/n/9 Further de-tails on the sys-tem re-quire-ments can be found 
 at:
  []
 
-[6 <F:/workspace/NuFiDocumentation/images/targets_example.png (PNG copy)>]
-[7] [8] (F:\workspace\NuFiDocumentation\document.bbl
+[8 <F:/workspace/NuFiDocumentation/images/targets_example.png (PNG copy)>]
+[9] [10] (F:\workspace\NuFiDocumentation\document.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
-) [9] (F:\workspace\NuFiDocumentation\document.aux) ) 
+) [11] (F:\workspace\NuFiDocumentation\document.aux) ) 
 Here is how much of TeX's memory you used:
- 3185 strings out of 493921
- 41568 string characters out of 3152096
- 104798 words of memory out of 3000000
+ 3191 strings out of 493921
+ 41748 string characters out of 3152096
+ 105798 words of memory out of 3000000
  6467 multiletter control sequences out of 15000+200000
  10422 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,8n,32p,256b,1384s stack positions out of 5000i,500n,10000p,200000b,50000s
-<e:/Tools/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/Too
-ls/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Tools/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr17.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><e:/Tools/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Tools/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr9.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pf
-b><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Tools/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (9 pages, 2221410 bytes).
+<e:/Tools/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/To
+ols/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Tools/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr17.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><e:/Tools/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Tools/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr9.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.p
+fb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Tools/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (11 pages, 2223614 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
