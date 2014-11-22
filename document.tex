@@ -3,7 +3,39 @@
 \usepackage[ansinew]{inputenc}
 \usepackage{graphicx}
 \usepackage{listings, lstautogobble}
+\usepackage[usenames,dvipsnames]{color}
 \pagestyle{headings}
+
+\definecolor{codegray}{gray}{0.92}
+\newcommand{\code}[1]{\colorbox{codegray}{\texttt{#1}}}
+
+\lstset{ %
+backgroundcolor=\color{codegray},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+breaklines=true,                 % sets automatic line breaking
+captionpos=b,                    % sets the caption-position to bottom
+commentstyle=\color{green},      % comment style
+deletekeywords={...},            % if you want to delete keywords from the given language
+escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+frame=single,                    % adds a frame around the code
+keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+keywordstyle=\color{blue},       % keyword style
+language=Octave,                 % the language of the code
+morekeywords={*,...},            % if you want to add more keywords to the set
+numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+numbersep=5pt,                   % how far the line-numbers are from the code
+numberstyle=\tiny\color{black},  % the style that is used for the line-numbers
+rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+showstringspaces=false,          % underline spaces within strings only
+showtabs=false,                  % show tabs within strings adding particular underscores
+stepnumber=1,                    % the step between two line-numbers. If it's
+stringstyle=\color{mauve},       % string literal style
+tabsize=2,                       % sets default tabsize to 2 spaces
+title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
 
 \begin{document}
 \bibliographystyle{alphadin}
@@ -15,7 +47,7 @@
 
 \newpage
 \tableofcontents
- 
+
 \newpage
 \listoffigures
 
@@ -26,22 +58,21 @@
 \section{Introduction}
 
 \subsection{Preface}
- 
+
 \subsection{Objective}
 
 \subsection{Motivation}
 Currently nucleoli are detected using an application called
-CellProfiler\footnote{http://www.cellprofiler.org}.
-
-While this application yields reliable results, it also takes pretty long to complete
-the analysis. Runtimes up to 45 seconds are common.
+CellProfiler\footnote{http://www.cellprofiler.org}. While this application
+yields reliable results, it also takes pretty long to complete the analysis.
+Runtimes up to 45 seconds are common.
 
 Due to the fact that CellProfiler is a very general approach, applicable to a
 large variety of tasks related to detecting nuclei and nucleoli, the results of
 its analysis have to be checked manually to reduce the amount of
 false-positives.
 
---TODO--
+- TODO -
 
 Consequently, this leads to a more specialized way of analyzing the cells, which
 does not do all the analysis performed by CellProfiler, but on the other hand is
@@ -49,9 +80,9 @@ much faster and thus helps to prevent cells dying before the analysis is
 finished.
 
 \begin{figure}[h]
-    \includegraphics[width=\linewidth]{images/cellprofiler_channel1}
-    \caption{Example analysis performed with CellProfiler}
-    \label{fig:cellprofiler_example}
+\includegraphics[width=\linewidth]{images/cellprofiler_channel1}
+\caption{Example analysis performed with CellProfiler}
+\label{fig:cellprofiler_example}
 \end{figure}
 
 \newpage
@@ -101,13 +132,17 @@ The application has to meet the following requirements:
   \end{itemize}
   \item \textbf{Serialization of the results:} All results have to be stored in
   their accordant files in a subfolder \textit{results} of the folder
-  containing the original data. In the following, the accordant formats and
-  files are described.
+  containing the original data. The name of each result file has to contain a
+  the timestamp indicating the application's execution in the format
+  \newline \code{<year>\_<month>\_<day>\_<hour>\_<minute>\_<second>}.
+  \newline E.g. \code{targets\_2014\_11\_20\_14\_50\_35.txt}.
+  
+  In the following, the accordant formats and files are described.
   \begin{itemize}
-  	\item \textbf{Targets:} Real targets and fallback targets sre to be saved in
-  	one txt-file named \textit{targets\_$\langle$timestamp$\rangle$.txt} in the
-  	following format:
-\begin{lstlisting}[frame=single, caption=Format of results txt-file]
+    \item \textbf{Targets:} Real targets and fallback targets sre to be saved in
+    one txt-file named \code{targets\_<timestamp>.txt} in the
+    following format:
+    \begin{lstlisting}[caption=Format of results txt-file]
 # nucleoli targets
 <target number> : [<x-coord>, <y-coord>]
 ...
@@ -116,8 +151,8 @@ The application has to meet the following requirements:
 ...
 \end{lstlisting}
 
-		\textbf{Example:}
-\begin{lstlisting}[frame=single, caption=Example of results file]
+\textbf{Example:}
+\begin{lstlisting}[caption=Example of results file]
 # nucleoli targets
 1 : [468, 43]
 2 : [1183, 14]
@@ -125,20 +160,20 @@ The application has to meet the following requirements:
 3 : [87, 174]
 4 : [769, 198]
 \end{lstlisting}
-  	\item \textbf{Statistics:} The statistics as mentioned above have to be
-  	stored in a txt-file named   
-  	\textit{statistics\_$\langle$timestamp$\rangle$.txt}. An example of the
-  	statistics file can be found in the appendix.
-  	\item \textbf{Result image:} The image as it would be displayed by the
-  	visualizer has to be stored to a file named
-  	\textit{targets\_$\langle$timestamp$\rangle$.$\langle$original
-  	image filetype$\rangle$}. See Figure \ref{fig:target_image_example} for an
-  	example the image. 
-  	\begin{figure}[h]
-	    \includegraphics[width=\linewidth]{images/targets_example}
-	    \caption{Example of the image containing the results}
-	    \label{fig:target_image_example}
-	\end{figure}
+\item \textbf{Statistics:} The statistics as mentioned above have to be
+stored in a txt-file named
+\code{statistics\_<timestamp>.txt}. An example of the
+statistics file can be found in the appendix.
+\item \textbf{Result image:} The image as it would be displayed by the
+visualizer has to be stored to a file named
+
+\code{targets\_<timestamp>.<original image filetype>}. See Figure
+\ref{fig:target_image_example} for an example the image.
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{images/targets_example}
+\caption{Example of the image containing the results}
+\label{fig:target_image_example}
+\end{figure}
   \end{itemize}
   \item \textbf{Quick and easy deployment:} The application is supposed to be
   deployed and run as easily as possible. Since the environment and the machines
@@ -158,16 +193,16 @@ found at:
 https://docs.oracle.com/javase/7/docs/webnotes/install/}:
 
 \begin{table}[h]
-	\centering
-	\begin{tabular}{ l | r }
-	  Memory: & 128MB \\
-	  \hline
-	  Processor: & Pentium 2 @ 266MHz \\
-	  \hline
-	  Disc space: & 124 MB + 2 MB \\
-	\end{tabular}
-	\caption{Minimum system requirements of Java 1.7 on Windows 64bit}
-	\label{tab:system_requirements_java7}
+\centering
+\begin{tabular}{ l | r }
+Memory: & 128MB \\
+\hline
+Processor: & Pentium 2 @ 266MHz \\
+\hline
+Disc space: & 124 MB + 2 MB \\
+\end{tabular}
+\caption{Minimum system requirements of Java 1.7 on Windows 64bit}
+\label{tab:system_requirements_java7}
 \end{table}
 
 As it is good practice and vital to the security of any system, the Java
@@ -175,16 +210,136 @@ framework should be updated on a regular basis. Note that the requirements may
 change with any update.
 
 \subsection{Starting the Application}
+Starting the application is acoomplished using the command line interface via
+Java's \code{java -jar} or \code{javaw -jar} command\footnote{See
+https://docs.oracle.com/javase/7/docs/technotes/tools/windows/java.html for
+further details.}. Furthermore, the application expects the configuration file
+to be passed as single parameter.
+
+Considering a scenario in which the configuration file (see \ref{sec:configuration}) is
+stored as \code{configuration.txt} in the same folder as the \code{NuFi.jar}, the
+following command will properly start the application:
+\newline\code{java -jar NuFi.jar configuration.txt}.
 
 
-\subsection{Configuration}
+\subsection{Configuration}\label{sec:configuration}
+Configuration of the application is performed using a simple text file
+containing the information listed in the following. Note that a missing
+parameter will result in a fatal error, preventing the application from properly
+working.
+
+A complete example of the configuration file can be found in the appendix.
+
 \subsubsection{General Parameters}
+This section contains information on filetypes, source folders and naming
+convention of source files.
+\begin{itemize}
+  \item \textbf{Source folder:} The folder containing the source files (e.g.
+  image files) on which the analysis will be based. The source folders are
+  expected to be provided as absolut path or relative to \code{NuFi.jar}.
+  
+  Note that the application expects exactly three files of the type defined as
+  channel filetype. If there are more or less than three files of that type, a
+  fatal error will occur.
+  
+  \textbf{Key:}
+  \newline \code{source.folder}
+  
+  \textbf{Examples:}
+  \newline \code{source.folder = C:/example/images}
+  \newline \code{source.folder = ../../example/images}
+  \newline \code{source.folder = example/images}
+  
+  \item \textbf{Used channels:} Each specimen is photographed three times
+  using different colorization. This results in three different images
+  referred to as different channels. Channels 1 and 3 are used in the process
+  of detecting targets, thus, the correct specification and order of the
+  files is vital for image analysis. Position one determines channel 1,
+  position 3 determines channel 3. The source folder is scanned for files
+  containing these channels determination. If these are not found, the
+  application will terminate with a fatal error.
+  
+  \textbf{Key:}
+  \newline \code{used.channels}
+  
+  \textbf{Examples:}
+  \newline \code{used.channels = Kanal1, Kanal2, Kanal3}
+  \newline \code{used.channels = channel1, channel2, channel3}
+  
+  \item \textbf{Channel filetype:} Though using the png-file format is advised,
+  the application is built to be able to analyze various image formats. If it
+  is necessary to analyze images that are not provided in the png-format, the
+  accordant format can be provided using this key.
+  
+  \textbf{Key:}
+  \newline \code{channel.filetype}
+  
+  \textbf{Examples:}
+  \newline \code{channel.filetype = png}
+  \newline \code{channel.filetype = jpg}
+\end{itemize}
+\subsection{General Picture Analysis Settings}
+This section contains information of the expected size and shape of nuclei and
+nucleoli, as well as the width of the in depth-analysis.
+
+\begin{itemize}
+  \item \textbf{Size settings:} Since the size of the nuclei and nucleoli in the
+  specimen may vary and since the magnification of the microscope used in taking the
+  pictures may also change, the size in the photographs may need to be adapted.
+  This can be achieved by giving an average size in sqaure-pixels and the
+  minimum and maximum sizes as multiples of that size.
+  
+  \textbf{Keys:}
+  \newline \code{nucleus.average}
+  \newline \code{nucleus.min.factor}
+  \newline \code{nucleus.max.factor}
+  \newline \code{nucleolus.average}
+  \newline \code{nucleolus.min.factor}
+  \newline \code{nucleolus.max.factor}
+  
+  \textbf{Examples:}
+  \newline \code{nucleus.average = 10000}
+  \newline \code{nucleus.min.factor = 0.5}
+  \newline \code{nucleus.max.factor = 1.5}
+  \newline \code{nucleolus.average = 100}
+  \newline \code{nucleolus.min.factor = 0.75}
+  \newline \code{nucleolus.max.factor = 1.8}
+  
+  \item \textbf{Minimum circularity:} This parameter pays respect to the
+  variation of the objects in their shape. A value of 1 indicates a perfect
+  circle, while a 0 indicates that there are no requirements to the shape of the
+  object. Since nuclei typically are elliptical in shape, a value of
+  approximatly 0.6 is advised. Nucleoli are typically close to a perfect circle.
+  Thus, a value of 0.9 includes most of them while it excludes a variety of
+  anomalies and prevents false-positives on nuclei borders.
+  
+  \textbf{Keys:}
+  \newline \code{nucleus.min.circularity}
+  \newline \code{nucleolus.min.circularity}
+  
+  \textbf{Examples:}
+  \newline \code{nucleus.min.circularity = 0.6}
+  \newline \code{nucleolus.min.circularity = 0.9}
+  
+  \item \textbf{In-depth width:} This parameter defines the variation in
+  thresholding used during in-depth anylsis.
+  
+  \textbf{Key:}
+  \newline \code{indepth.range}
+  
+  \textbf{Examples:}
+  \newline \code{indepth.range = 25}
+  \newline \code{indepth.range = 10}
+  
+\end{itemize}
+
 \subsubsection{Improved Image Detection Parameters}
-\subsubsection{Structure of Files and Folders}
+
+\subsection{Structure of Files and Folders}
 
 \newpage
 \section{Conclusion and Prospect}
- 
+
 \subsection{Conclusion}
 
 \subsection{Prospect}
