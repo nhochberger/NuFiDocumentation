@@ -334,6 +334,31 @@ nucleoli, as well as the width of the in depth-analysis.
 \end{itemize}
 
 \subsubsection{Improved Image Detection Parameters}
+In the standard setting the application will use the improved image detection
+algorithm. In this section, the parameters required for this algorithm can be
+defined. These include setting for brightness correction
+(\code{<object>.background.blur} and \code{<object>.thresholding.blur}) and the
+value used for correcting discrepancies between channel 3 colorization and the
+acutal size of nuclei (\code{nucleus.boundary.width}).
+
+\begin{itemize}
+  \item \textbf{Brightness correction:} 
+\end{itemize}
+
+\textbf{Keys:}
+\newline \code{nucleus.background.blur}
+\newline \code{nucleus.thresholding.blur}
+\newline \code{nucleus.boundary.width}
+\newline \code{nucleolus.background.blur}
+\newline \code{nucleolus.thresholding.blur}
+
+\textbf{Examples:}
+\newline \code{nucleus.background.blur = 100}
+\newline \code{nucleus.thresholding.blur = 3}
+\newline \code{nucleus.boundary.width = 5}
+\newline \code{nucleolus.background.blur = 10}
+\newline \code{nucleolus.thresholding.blur = 1}
+
 
 \subsection{Structure of Files and Folders}
 
