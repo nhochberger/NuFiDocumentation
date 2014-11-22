@@ -88,7 +88,7 @@ finished.
 \newpage
 \section{Design and Implementation}
 
-\subsection{Requirements}
+\subsection{Requirements}\label{sec:requirements}
 The application has to meet the following requirements:
 \begin{itemize}
   \item \textbf{Reliable nucleoli detection:} Stable and reliable detection of
@@ -342,7 +342,7 @@ value used for correcting discrepancies between channel 3 colorization and the
 acutal size of nuclei (\code{nucleus.boundary.width}).
 
 \begin{itemize}
-  \item \textbf{Brightness correction:} 
+  \item \textbf{Brightness correction:}
 \end{itemize}
 
 \textbf{Keys:}
@@ -361,6 +361,27 @@ acutal size of nuclei (\code{nucleus.boundary.width}).
 
 
 \subsection{Structure of Files and Folders}
+The results of the image analysis will be stored into a directory \code{results}
+which is created as a subfolder of the directory defined as source folder. This
+directory will contain the targets file, the result image and, in case
+statistics are enabled, the statistics file.
+
+The application will not delete nor overwrite files created by a previous
+execution since each file contains a timestamp as defined in
+\ref{sec:requirements}.
+
+Besides this, the application will create a directory \code{logs} on the same
+level as \code{NuFi.bat} is located. This directory contains the log-file of the
+application itself. If any unexpected behaviour is encountered while using the
+application, refer to this file since it might contain helpful information.
+
+\newpage
+\section{Image Analysis}
+
+
+\subsection{Target Detection Procedure}
+\subsection{Thresholding}
+\subsection{Particle Analysis}
 
 \newpage
 \section{Conclusion and Prospect}
