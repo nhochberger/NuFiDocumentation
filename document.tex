@@ -4,6 +4,9 @@
 \usepackage{graphicx}
 \usepackage{listings, lstautogobble}
 \usepackage[usenames,dvipsnames]{color}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
 \pagestyle{headings}
 
 \definecolor{codegray}{gray}{0.92}
@@ -361,26 +364,78 @@ acutal size of nuclei (\code{nucleus.boundary.width}).
 
 
 \subsection{Structure of Files and Folders}
+\begin{figure}
+\centering
+\raisebox{-\height}{\includegraphics[width=120px]{images/folders_application}}
+\raisebox{-\height}{\includegraphics[width=200px]{images/folders_data}}
+\caption{Structure of directories and files created in the application's
+folder and the source folder}
+\label{fig:folders}
+\end{figure}
+
 The results of the image analysis will be stored into a directory \code{results}
 which is created as a subfolder of the directory defined as source folder. This
 directory will contain the targets file, the result image and, in case
-statistics are enabled, the statistics file.
+statistics are enabled, the statistics file. See figure \ref{fig:folders}.
 
-The application will not delete nor overwrite files created by a previous
+The application will neither delete nor overwrite files created by a previous
 execution since each file contains a timestamp as defined in
 \ref{sec:requirements}.
 
 Besides this, the application will create a directory \code{logs} on the same
 level as \code{NuFi.bat} is located. This directory contains the log-file of the
 application itself. If any unexpected behaviour is encountered while using the
-application, refer to this file since it might contain helpful information.
+application, refer to this file since it might contain helpful information. See
+figure \ref{fig:folders}.
 
 \newpage
 \section{Image Analysis}
 
+In this section the procedure of how the application processes and anlyzes
+images is explained. Details such as how the applications checks its
+configuration are omitted in favor of more emphasis on image analysis.
+
+\begin{figure}
+\centering
+\includegraphics[width=248px]{images/application_procedure}
+\caption{Schematic of the application's execution process}
+\label{fig:application_process}
+\end{figure}
 
 \subsection{Target Detection Procedure}
+The target detection process can basically devided in two parts. At first, the
+regions of interest are detected using channel 3. These regions are then
+transferred to channel 1 in order to only analyze those regions that may
+actually contain nucleoli.
+
+In the following, these two parts are explained step-by-step using the example
+images in figure \ref{fig:example_images}.
+
+\begin{figure}
+\centering
+
+\begin{subfigure}[b]{0.48\textwidth}
+\includegraphics[width=\textwidth]{images/example_Kanal1}
+\caption{Channel 1 example image}
+\label{fig:channel1}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\textwidth}
+\includegraphics[width=\textwidth]{images/example_Kanal3}
+\caption{Channel 3 example image}
+\label{fig:channel1}
+\end{subfigure}
+\caption{Example images of channel 1 and 3}
+\label{fig:example_images}
+\end{figure}
+
+\subsubsection{Determining Regions of Interest}
+
+
+\subsubsection{Finding Nucleoli}
+
 \subsection{Thresholding}
+
+
 \subsection{Particle Analysis}
 
 \newpage
