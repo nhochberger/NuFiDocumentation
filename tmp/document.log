@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.25)  23 NOV 2014 17:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  25 NOV 2014 11:05
 entering extended mode
 **document.tex
-(D:\workspace\NuFiDocumentation\document.tex
+(F:\workspace\NuFiDocumentation\document.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,9 +13,9 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+(e:\Tools\MiKTeX\tex\latex\base\article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
+(e:\Tools\MiKTeX\tex\latex\base\size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,19 +30,19 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+(e:\Tools\MiKTeX\tex\generic\babel\babel.sty
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+(e:\Tools\MiKTeX\tex\latex\00miktex\bblopts.cfg
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
+(e:\Tools\MiKTeX\tex\generic\babel\english.ldf
 Language: english 2005/03/30 v3.3o English support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+(e:\Tools\MiKTeX\tex\generic\babel\babel.def
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
@@ -51,39 +51,39 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(e:\Tools\MiKTeX\tex\latex\base\inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ansinew.def"
+(e:\Tools\MiKTeX\tex\latex\base\ansinew.def
 File: ansinew.def 2008/03/30 v1.1d Input encoding file
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(e:\Tools\MiKTeX\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(e:\Tools\MiKTeX\tex\latex\graphics\keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(e:\Tools\MiKTeX\tex\latex\graphics\graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(e:\Tools\MiKTeX\tex\latex\graphics\trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+(e:\Tools\MiKTeX\tex\latex\00miktex\graphics.cfg
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(e:\Tools\MiKTeX\tex\latex\pdftex-def\pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(e:\Tools\MiKTeX\tex\generic\oberdiek\infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(e:\Tools\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -91,7 +91,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(C:\Users\Nico\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+(e:\Tools\MiKTeX\tex\latex\listings\listings.sty
 \lst@mode=\count89
 \lst@gtempboxa=\box26
 \lst@token=\toks17
@@ -105,33 +105,34 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \lst@lineno=\count94
 \lst@maxwidth=\dimen109
 
-(C:\Users\Nico\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+(e:\Tools\MiKTeX\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count95
 \lst@skipnumbers=\count96
 \lst@framebox=\box27
 )
-(C:\Users\Nico\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+(e:\Tools\MiKTeX\tex\latex\listings\listings.cfg
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(C:\Users\Nico\AppData\Roaming\MiKTeX\2.9\tex\latex\lstaddons\lstautogobble.sty
+(e:\Tools\MiKTeX\tex\latex\lstaddons\lstautogobble.sty
 Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'list
 ings'
 \lstag@spacecount=\count97
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+)
+(e:\Tools\MiKTeX\tex\latex\graphics\color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(e:\Tools\MiKTeX\tex\latex\00miktex\color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+(e:\Tools\MiKTeX\tex\latex\graphics\dvipsnam.def
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+(e:\Tools\MiKTeX\tex\latex\float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count98
 \float@exts=\toks18
@@ -139,10 +140,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks19
 \@floatcapt=\box29
 )
-(C:\Users\Nico\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+(e:\Tools\MiKTeX\tex\latex\caption\caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(C:\Users\Nico\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+(e:\Tools\MiKTeX\tex\latex\caption\caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen110
@@ -157,15 +158,23 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 )
-(C:\Users\Nico\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption.sty
+(e:\Tools\MiKTeX\tex\latex\caption\subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count100
 \c@subtable=\count101
 )
-(C:\Users\Nico\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+(e:\Tools\MiKTeX\tex\latex\wrapfig\wrapfig.sty
+\wrapoverhang=\dimen117
+\WF@size=\dimen118
+\c@WF@wrappedlines=\count102
+\WF@box=\box30
+\WF@everypar=\toks20
+Package: wrapfig 2003/01/31  v 3.6
+)
+(e:\Tools\MiKTeX\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-(D:\workspace\NuFiDocumentation\document.aux
+(F:\workspace\NuFiDocumentation\document.aux
 
 LaTeX Warning: Label `fig:channel1' multiply defined.
 
@@ -173,105 +182,106 @@ LaTeX Warning: Label `fig:channel1' multiply defined.
 LaTeX Warning: Label `sub@fig:channel1' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
- (C:\Users\Nico\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+ (e:\Tools\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen117
-\scratchbox=\box30
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen118
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks21
+\scratchcounter=\count103
+\scratchdimen=\dimen119
+\scratchbox=\box31
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen120
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks22
 )
-\c@lstlisting=\count108
+\c@lstlisting=\count109
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 49.
+(Font)              <12> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 49.
+(Font)              <8> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 49.
+(Font)              <6> on input line 50.
  [1
 
 {C:/Users/Nico/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(D:\workspace\NuFiDocumentation\document.toc
+(F:\workspace\NuFiDocumentation\document.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 3.
 )
 \tf@toc=\write3
  [2]
-(D:\workspace\NuFiDocumentation\document.lof)
+(F:\workspace\NuFiDocumentation\document.lof)
 \tf@lof=\write4
  [3]
-(D:\workspace\NuFiDocumentation\document.lot)
+(F:\workspace\NuFiDocumentation\document.lot)
 \tf@lot=\write5
  [4]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 69.
+(Font)              <9> on input line 70.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 69.
+(Font)              <5> on input line 70.
 
 <images/cellprofiler_channel1.png, id=20, 1393.205pt x 1043.9pt>
 File: images/cellprofiler_channel1.png Graphic file (type png)
 
 <use images/cellprofiler_channel1.png>
-Package pdftex.def Info: images/cellprofiler_channel1.png used on input line 86
+Package pdftex.def Info: images/cellprofiler_channel1.png used on input line 87
 .
 (pdftex.def)             Requested size: 360.0pt x 269.73509pt.
- [5 <D:/workspace/NuFiDocumentation/images/cellprofiler_channel1.png (PNG copy)
+ [5 <F:/workspace/NuFiDocumentation/images/cellprofiler_channel1.png (PNG copy)
 >]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 98.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(e:\Tools\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 98.
  [6]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 150.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 151.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+(e:\Tools\MiKTeX\tex\latex\base\omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 150.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 151.
 
 <images/targets_example.png, id=31, 1393.205pt x 1043.9pt>
 File: images/targets_example.png Graphic file (type png)
 
 <use images/targets_example.png>
-Package pdftex.def Info: images/targets_example.png used on input line 176.
+Package pdftex.def Info: images/targets_example.png used on input line 177.
 (pdftex.def)             Requested size: 360.0pt x 269.73509pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8 <D:/workspace/NuFiDocumentation/images/targets_example.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[7] [8 <F:/workspace/NuFiDocumentation/images/targets_example.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 [][]\OT1/cmr/m/n/9 Further de-tails on the sys-tem re-quire-ments can be found 
 at:
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 219--219
+Underfull \hbox (badness 2846) in paragraph at lines 220--220
 [][]\OT1/cmr/m/n/9 See https://docs.oracle.com/javase/7/docs/technotes/tools/wi
 ndows/java.html for
  []
@@ -280,7 +290,7 @@ ndows/java.html for
 File: images/folders_application.png Graphic file (type png)
 
 <use images/folders_application.png>
-Package pdftex.def Info: images/folders_application.png used on input line 369.
+Package pdftex.def Info: images/folders_application.png used on input line 370.
 
 (pdftex.def)             Requested size: 120.45044pt x 120.45016pt.
 
@@ -288,69 +298,100 @@ Package pdftex.def Info: images/folders_application.png used on input line 369.
 File: images/folders_data.png Graphic file (type png)
 
 <use images/folders_data.png>
-Package pdftex.def Info: images/folders_data.png used on input line 370.
+Package pdftex.def Info: images/folders_data.png used on input line 371.
 (pdftex.def)             Requested size: 200.75073pt x 223.41217pt.
  [12]
-<images/application_procedure.png, id=57, 421.575pt x 291.0875pt>
-File: images/application_procedure.png Graphic file (type png)
-
-<use images/application_procedure.png>
-Package pdftex.def Info: images/application_procedure.png used on input line 40
-0.
-(pdftex.def)             Requested size: 248.93091pt x 171.88226pt.
-
-<images/example_Kanal1.png, id=58, 1393.205pt x 1043.9pt>
+<images/example_Kanal1.png, id=57, 1393.205pt x 1043.9pt>
 File: images/example_Kanal1.png Graphic file (type png)
 
 <use images/example_Kanal1.png>
-Package pdftex.def Info: images/example_Kanal1.png used on input line 418.
+Package pdftex.def Info: images/example_Kanal1.png used on input line 402.
 (pdftex.def)             Requested size: 172.79846pt x 129.46774pt.
 
-<images/example_Kanal3.png, id=59, 1393.205pt x 1043.9pt>
+<images/example_Kanal3.png, id=58, 1393.205pt x 1043.9pt>
 File: images/example_Kanal3.png Graphic file (type png)
 
 <use images/example_Kanal3.png>
-Package pdftex.def Info: images/example_Kanal3.png used on input line 423.
+Package pdftex.def Info: images/example_Kanal3.png used on input line 407.
 (pdftex.def)             Requested size: 172.79846pt x 129.46774pt.
- [13 <D:/workspace/NuFiDocumentation/images/folders_application.png (PNG copy)>
- <D:/workspace/NuFiDocumentation/images/folders_data.png (PNG copy)>] [14 <D:/w
-orkspace/NuFiDocumentation/images/application_procedure.png (PNG copy)> <D:/wor
-kspace/NuFiDocumentation/images/example_Kanal1.png (PNG copy)> <D:/workspace/Nu
-FiDocumentation/images/example_Kanal3.png (PNG copy)>] [15] (D:\workspace\NuFiD
-ocumentation\document.bbl
+ [13 <F:/workspace/NuFiDocumentation/images/folders_application.png (PNG copy)>
+ <F:/workspace/NuFiDocumentation/images/folders_data.png (PNG copy)> <F:/worksp
+ace/NuFiDocumentation/images/example_Kanal1.png (PNG copy)> <F:/workspace/NuFiD
+ocumentation/images/example_Kanal3.png (PNG copy)>] <images/example_Kanal3_gaus
+sian100.png, id=63, 1393.205pt x 1043.9pt>
+File: images/example_Kanal3_gaussian100.png Graphic file (type png)
+
+<use images/example_Kanal3_gaussian100.png>
+Package pdftex.def Info: images/example_Kanal3_gaussian100.png used on input li
+ne 427.
+(pdftex.def)             Requested size: 154.79736pt x 115.97621pt.
+
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+436.
+
+
+<images/example_Kanal3_multiply178_gaussian2.png, id=64, 1393.205pt x 1043.9pt>
+File: images/example_Kanal3_multiply178_gaussian2.png Graphic file (type png)
+<use images/example_Kanal3_multiply178_gaussian2.png>
+Package pdftex.def Info: images/example_Kanal3_multiply178_gaussian2.png used o
+n input line 437.
+(pdftex.def)             Requested size: 154.79736pt x 115.97621pt.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 44
+2.
+
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+458.
+
+<images/example_Kanal3_corrected_threshold.png, id=65, 1393.205pt x 1043.9pt>
+File: images/example_Kanal3_corrected_threshold.png Graphic file (type png)
+
+<use images/example_Kanal3_corrected_threshold.png>
+Package pdftex.def Info: images/example_Kanal3_corrected_threshold.png used on 
+input line 459.
+(pdftex.def)             Requested size: 154.79736pt x 115.97621pt.
+ [14 <F:/workspace/NuFiDocumentation/images/example_Kanal3_gaussian100.png (PNG
+ copy)>]
+Underfull \hbox (badness 1515) in paragraph at lines 464--470
+[][][]\OT1/cmr/m/n/10.95 Having fin-ished this prepa-ra-tion,
+ []
+
+[15 <F:/workspace/NuFiDocumentation/images/example_Kanal3_multiply178_gaussian2
+.png (PNG copy)> <F:/workspace/NuFiDocumentation/images/example_Kanal3_correcte
+d_threshold.png>] [16] (F:\workspace\NuFiDocumentation\document.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
-) [16] (D:\workspace\NuFiDocumentation\document.aux)
+) [17] (F:\workspace\NuFiDocumentation\document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5244 strings out of 493921
- 75459 string characters out of 3144879
- 202496 words of memory out of 3000000
- 8491 multiletter control sequences out of 15000+200000
+ 5313 strings out of 493921
+ 75348 string characters out of 3152096
+ 203767 words of memory out of 3000000
+ 8554 multiletter control sequences out of 15000+200000
  10590 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,8n,38p,256b,2027s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on document.pdf (16 pages, 4089270 bytes).
+<e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><e:/Tools/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb><e:/Tools/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmi9.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/Tools/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr17.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr6.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Tool
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/Tools/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsl10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><e:/Tools/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><e:/Tools/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmtt10.pfb>
+Output written on document.pdf (17 pages, 4658448 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

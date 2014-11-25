@@ -7,6 +7,7 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{wrapfig}
 \pagestyle{headings}
 
 \definecolor{codegray}{gray}{0.92}
@@ -395,25 +396,8 @@ In this section the procedure of how the application processes and anlyzes
 images is explained. Details such as how the applications checks its
 configuration are omitted in favor of more emphasis on image analysis.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics[width=248px]{images/application_procedure}
-\caption{Schematic of the application's execution process}
-\label{fig:application_process}
-\end{figure}
-
-\subsection{Target Detection Procedure}
-The target detection process can basically devided in two parts. At first, the
-regions of interest are detected using channel 3. These regions are then
-transferred to channel 1 in order to only analyze those regions that may
-actually contain nucleoli.
-
-In the following, these two parts are explained step-by-step using the example
-images in figure \ref{fig:example_images}.
-
-\begin{figure}
-\centering
-
 \begin{subfigure}[b]{0.48\textwidth}
 \includegraphics[width=\textwidth]{images/example_Kanal1}
 \caption{Channel 1 example image}
@@ -428,15 +412,73 @@ images in figure \ref{fig:example_images}.
 \label{fig:example_images}
 \end{figure}
 
-\subsubsection{Determining Regions of Interest}
+\subsection{Target Detection Procedure}
+The target detection process can basically devided in two parts. At first, the
+regions of interest are detected using channel 3. These regions are then
+transferred to channel 1 in order to only analyze those regions that may
+actually contain nucleoli.
 
+In the following, these two parts are explained step-by-step using the example
+images in figure \ref{fig:example_images}.
+
+
+\subsubsection{Determining Regions of Interest}
+\begin{wrapfigure}{r}{0.45\textwidth}
+\includegraphics[width=0.43\textwidth]{images/example_Kanal3_gaussian100}
+\caption{Channel 3 after Gaussian Blur with a radius of 100 pixels was applied}
+\label{fig:example_channel3_gaussian}
+\end{wrapfigure}
+
+Finding the regions of interest is performed using only the image referred to as
+channel 3, as this is the image which best shows the nuclei due to the
+colorization used.
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+\includegraphics[width=0.43\textwidth]{images/example_Kanal3_multiply178_gaussian2}
+\caption{Channel 3 after brightness correction is performed}
+\label{fig:example_channel3_prepared}
+\end{wrapfigure}
+
+Typically the images show very uneven exposure to light, resulting in the
+necessity of brightness correcting as a very first step. This is achieved by
+using a gaussian blur with a radius approximately the size of the objects that
+are supposed to be found, in this example, a value between 100 and 120 yields
+pretty useful results. The result of this operation can be seen in
+\ref{fig:example_channel3_gaussian} and is referred to as background image. The
+original channel 3 image is then divided by the background image, which means
+that each pixel value of the original image is divided by the value of the pixel
+of the background image that is at the same location. 
+This leads to an image with very small pixel values, typically close to zero,
+e.g. the resulting image is all black. Consequently, the next step is to
+multiply each pixel value with a constant factor, e.g. 178. As a last step in
+this preparation process, a gaussian blur with a small radius, e.g. 2px, is
+applied to the image in order to smooth the edges of the nuclei and to reduce
+noise. The result of these steps can be seen in \ref{fig:example_channel3_prepared}.
+
+\begin{wrapfigure}{r}{0.45\textwidth}
+\includegraphics[width=0.43\textwidth]{images/example_Kanal3_corrected_threshold}
+\caption{Channel 3 with auto threshold applied}
+\label{fig:channel3_threshold}
+\end{wrapfigure}
+
+Having finished this preparation, channel 3 now shows evenly distributed
+brightness and only little variation in these. This makes the following step,
+finding a suitable threshold which is described in detail in
+\ref{sec:thresholding}, easier und much more stable across different images.
+Figure \ref{fig:channel3_threshold} shows channel 3 after an auto
+default threshold was applied.
+
+In the last part of determining the regions of interest, the areas to which the
+threshold applies, e.g. are marked in red, are analyzed using ImageJ's
+Particle Analyzer plugin. Details of how this action is performed are
+explained in \ref{sec:particle_analysis}. 
 
 \subsubsection{Finding Nucleoli}
 
-\subsection{Thresholding}
+\subsection{Thresholding}\label{sec:thresholding}
 
 
-\subsection{Particle Analysis}
+\subsection{Particle Analysis}\label{sec:particle_analysis}
 
 \newpage
 \section{Conclusion and Prospect}
