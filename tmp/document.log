@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  25 NOV 2014 14:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  26 NOV 2014 00:26
 entering extended mode
 **document.tex
 (F:\workspace\NuFiDocumentation\document.tex
@@ -59,6 +59,13 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 (e:\Tools\MiKTeX\tex\latex\base\ansinew.def
 File: ansinew.def 2008/03/30 v1.1d Input encoding file
 ))
+(e:\Tools\MiKTeX\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count88
+)
 (e:\Tools\MiKTeX\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -86,29 +93,29 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (e:\Tools\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count88
+\Gread@gobject=\count89
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
 (e:\Tools\MiKTeX\tex\latex\listings\listings.sty
-\lst@mode=\count89
+\lst@mode=\count90
 \lst@gtempboxa=\box26
 \lst@token=\toks17
-\lst@length=\count90
+\lst@length=\count91
 \lst@currlwidth=\dimen106
-\lst@column=\count91
-\lst@pos=\count92
+\lst@column=\count92
+\lst@pos=\count93
 \lst@lostspace=\dimen107
 \lst@width=\dimen108
-\lst@newlines=\count93
-\lst@lineno=\count94
+\lst@newlines=\count94
+\lst@lineno=\count95
 \lst@maxwidth=\dimen109
 
 (e:\Tools\MiKTeX\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count95
-\lst@skipnumbers=\count96
+\c@lstnumber=\count96
+\lst@skipnumbers=\count97
 \lst@framebox=\box27
 )
 (e:\Tools\MiKTeX\tex\latex\listings\listings.cfg
@@ -119,7 +126,7 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
 (e:\Tools\MiKTeX\tex\latex\lstaddons\lstautogobble.sty
 Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'list
 ings'
-\lstag@spacecount=\count97
+\lstag@spacecount=\count98
 )
 (e:\Tools\MiKTeX\tex\latex\graphics\color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -134,7 +141,7 @@ File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 (e:\Tools\MiKTeX\tex\latex\float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count98
+\c@float@type=\count99
 \float@exts=\toks18
 \float@box=\box28
 \@float@everytoks=\toks19
@@ -154,19 +161,19 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen115
 \caption@hangindent=\dimen116
 )
-\c@ContinuedFloat=\count99
+\c@ContinuedFloat=\count100
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 )
 (e:\Tools\MiKTeX\tex\latex\caption\subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count100
-\c@subtable=\count101
+\c@subfigure=\count101
+\c@subtable=\count102
 )
 (e:\Tools\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 \wrapoverhang=\dimen117
 \WF@size=\dimen118
-\c@WF@wrappedlines=\count102
+\c@WF@wrappedlines=\count103
 \WF@box=\box30
 \WF@everypar=\toks20
 Package: wrapfig 2003/01/31  v 3.6
@@ -176,48 +183,57 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (F:\workspace\NuFiDocumentation\document.aux
 
-LaTeX Warning: Label `fig:channel1' multiply defined.
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
 
 
-LaTeX Warning: Label `sub@fig:channel1' multiply defined.
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
  (e:\Tools\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
+\scratchcounter=\count104
 \scratchdimen=\dimen119
 \scratchbox=\box31
-\nofMPsegments=\count104
-\nofMParguments=\count105
+\nofMPsegments=\count105
+\nofMParguments=\count106
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count106
+\MPscratchCnt=\count107
 \MPscratchDim=\dimen120
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks22
 )
-\c@lstlisting=\count109
+\c@lstlisting=\count110
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 50.
+(Font)              <12> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 50.
+(Font)              <8> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 50.
+(Font)              <6> on input line 52.
  [1
 
 {C:/Users/Nico/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -234,15 +250,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@lot=\write5
  [4]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 70.
+(Font)              <9> on input line 72.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 70.
+(Font)              <5> on input line 72.
 
 <images/cellprofiler_channel1.png, id=20, 1393.205pt x 1043.9pt>
 File: images/cellprofiler_channel1.png Graphic file (type png)
 
 <use images/cellprofiler_channel1.png>
-Package pdftex.def Info: images/cellprofiler_channel1.png used on input line 87
+Package pdftex.def Info: images/cellprofiler_channel1.png used on input line 89
 .
 (pdftex.def)             Requested size: 360.0pt x 269.73509pt.
  [5 <F:/workspace/NuFiDocumentation/images/cellprofiler_channel1.png (PNG copy)
@@ -275,13 +291,13 @@ Package pdftex.def Info: images/targets_example.png used on input line 177.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7] [8 <F:/workspace/NuFiDocumentation/images/targets_example.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
 [][]\OT1/cmr/m/n/9 Further de-tails on the sys-tem re-quire-ments can be found 
 at:
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 220--220
+Underfull \hbox (badness 2846) in paragraph at lines 226--226
 [][]\OT1/cmr/m/n/9 See https://docs.oracle.com/javase/7/docs/technotes/tools/wi
 ndows/java.html for
  []
@@ -290,7 +306,7 @@ ndows/java.html for
 File: images/folders_application.png Graphic file (type png)
 
 <use images/folders_application.png>
-Package pdftex.def Info: images/folders_application.png used on input line 370.
+Package pdftex.def Info: images/folders_application.png used on input line 376.
 
 (pdftex.def)             Requested size: 120.45044pt x 120.45016pt.
 
@@ -298,21 +314,21 @@ Package pdftex.def Info: images/folders_application.png used on input line 370.
 File: images/folders_data.png Graphic file (type png)
 
 <use images/folders_data.png>
-Package pdftex.def Info: images/folders_data.png used on input line 371.
+Package pdftex.def Info: images/folders_data.png used on input line 377.
 (pdftex.def)             Requested size: 200.75073pt x 223.41217pt.
  [12]
 <images/example_Kanal1.png, id=57, 1393.205pt x 1043.9pt>
 File: images/example_Kanal1.png Graphic file (type png)
 
 <use images/example_Kanal1.png>
-Package pdftex.def Info: images/example_Kanal1.png used on input line 402.
+Package pdftex.def Info: images/example_Kanal1.png used on input line 408.
 (pdftex.def)             Requested size: 172.79846pt x 129.46774pt.
 
 <images/example_Kanal3.png, id=58, 1393.205pt x 1043.9pt>
 File: images/example_Kanal3.png Graphic file (type png)
 
 <use images/example_Kanal3.png>
-Package pdftex.def Info: images/example_Kanal3.png used on input line 407.
+Package pdftex.def Info: images/example_Kanal3.png used on input line 412.
 (pdftex.def)             Requested size: 172.79846pt x 129.46774pt.
  [13 <F:/workspace/NuFiDocumentation/images/folders_application.png (PNG copy)>
  <F:/workspace/NuFiDocumentation/images/folders_data.png (PNG copy)> <F:/worksp
@@ -323,14 +339,14 @@ File: images/example_Kanal3_gaussian100.png Graphic file (type png)
 
 <use images/example_Kanal3_gaussian100.png>
 Package pdftex.def Info: images/example_Kanal3_gaussian100.png used on input li
-ne 428.
+ne 432.
 (pdftex.def)             Requested size: 108.0011pt x 80.91734pt.
 
 <images/example_Kanal3_multiply178_gaussian2.png, id=64, 1393.205pt x 1043.9pt>
 File: images/example_Kanal3_multiply178_gaussian2.png Graphic file (type png)
 <use images/example_Kanal3_multiply178_gaussian2.png>
 Package pdftex.def Info: images/example_Kanal3_multiply178_gaussian2.png used o
-n input line 440.
+n input line 445.
 (pdftex.def)             Requested size: 108.0011pt x 80.91734pt.
 
 <images/example_Kanal3_corrected_threshold.png, id=65, 1393.205pt x 1043.9pt>
@@ -338,7 +354,7 @@ File: images/example_Kanal3_corrected_threshold.png Graphic file (type png)
 
 <use images/example_Kanal3_corrected_threshold.png>
 Package pdftex.def Info: images/example_Kanal3_corrected_threshold.png used on 
-input line 470.
+input line 475.
 (pdftex.def)             Requested size: 108.0011pt x 80.91734pt.
  [14 <F:/workspace/NuFiDocumentation/images/example_Kanal3_gaussian100.png (PNG
  copy)> <F:/workspace/NuFiDocumentation/images/example_Kanal3_multiply178_gauss
@@ -347,43 +363,115 @@ ian2.png (PNG copy)>]
 File: images/example_Kanal3_rois.png Graphic file (type png)
 
 <use images/example_Kanal3_rois.png>
-Package pdftex.def Info: images/example_Kanal3_rois.png used on input line 494.
+Package pdftex.def Info: images/example_Kanal3_rois.png used on input line 502.
 
-(pdftex.def)             Requested size: 108.0011pt x 80.91734pt.
+(pdftex.def)             Requested size: 288.0011pt x 215.78488pt.
  [15 <F:/workspace/NuFiDocumentation/images/example_Kanal3_corrected_threshold.
-png>] [16]
-(F:\workspace\NuFiDocumentation\document.bbl
+png> <F:/workspace/NuFiDocumentation/images/example_Kanal3_rois.png (PNG copy)>
+]
+<images/example_nucleus.png, id=74, 138.5175pt x 127.47626pt>
+File: images/example_nucleus.png Graphic file (type png)
 
-LaTeX Warning: Empty `thebibliography' environment on input line 10.
+<use images/example_nucleus.png>
+Package pdftex.def Info: images/example_nucleus.png used on input line 520.
+(pdftex.def)             Requested size: 108.0011pt x 99.39217pt.
 
-) [17 <F:/workspace/NuFiDocumentation/images/example_Kanal3_rois.png (PNG copy)
->] (F:\workspace\NuFiDocumentation\document.aux)
+<images/example_nucleus_shrinked8_blacked.png, id=75, 138.5175pt x 127.47626pt>
+File: images/example_nucleus_shrinked8_blacked.png Graphic file (type png)
+<use images/example_nucleus_shrinked8_blacked.png>
+Package pdftex.def Info: images/example_nucleus_shrinked8_blacked.png used on i
+nput line 540.
+(pdftex.def)             Requested size: 108.0011pt x 99.39217pt.
 
-LaTeX Warning: There were multiply-defined labels.
+Underfull \hbox (badness 2418) in paragraph at lines 542--542
+\OT1/cmr/m/n/10.95 els, ev-ery-thing out-side
+ []
 
- ) 
+
+<images/example_nucleus_threshold_default.png, id=76, 138.5175pt x 127.47626pt>
+File: images/example_nucleus_threshold_default.png Graphic file (type png)
+<use images/example_nucleus_threshold_default.png>
+Package pdftex.def Info: images/example_nucleus_threshold_default.png used on i
+nput line 562.
+(pdftex.def)             Requested size: 82.79846pt x 76.19846pt.
+
+<images/example_nucleus_threshold_huang.png, id=77, 138.5175pt x 127.47626pt>
+File: images/example_nucleus_threshold_huang.png Graphic file (type png)
+
+<use images/example_nucleus_threshold_huang.png>
+Package pdftex.def Info: images/example_nucleus_threshold_huang.png used on inp
+ut line 566.
+(pdftex.def)             Requested size: 82.79846pt x 76.19846pt.
+
+<images/example_nucleus_threshold_maxentropy.png, id=78, 138.5175pt x 127.47626
+pt>
+File: images/example_nucleus_threshold_maxentropy.png Graphic file (type png)
+ <use images/example_nucleus_threshold_maxentropy.png>
+Package pdftex.def Info: images/example_nucleus_threshold_maxentropy.png used o
+n input line 570.
+(pdftex.def)             Requested size: 82.79846pt x 76.19846pt.
+
+<images/example_nucleus_threshold_shanbhag.png, id=79, 138.5175pt x 127.47626pt
+>
+File: images/example_nucleus_threshold_shanbhag.png Graphic file (type png)
+ <use images/example_nucleus_threshold_shanbhag.png>
+Package pdftex.def Info: images/example_nucleus_threshold_shanbhag.png used on 
+input line 575.
+(pdftex.def)             Requested size: 82.79846pt x 76.19846pt.
+ [16 <F:/workspace/NuFiDocumentation/images/example_nucleus.png (PNG copy)> <F:
+/workspace/NuFiDocumentation/images/example_nucleus_shrinked8_blacked.png (PNG 
+copy)> <F:/workspace/NuFiDocumentation/images/example_nucleus_threshold_default
+.png> <F:/workspace/NuFiDocumentation/images/example_nucleus_threshold_huang.pn
+g> <F:/workspace/NuFiDocumentation/images/example_nucleus_threshold_maxentropy.
+png> <F:/workspace/NuFiDocumentation/images/example_nucleus_threshold_shanbhag.
+png>]
+<images/example_nucleus_rois.png, id=87, 138.5175pt x 127.47626pt>
+File: images/example_nucleus_rois.png Graphic file (type png)
+
+<use images/example_nucleus_rois.png>
+Package pdftex.def Info: images/example_nucleus_rois.png used on input line 595
+.
+(pdftex.def)             Requested size: 82.79846pt x 76.19846pt.
+
+Overfull \hbox (3.64523pt too wide) in paragraph at lines 595--596
+[][][] 
+ []
+
+<images/example_nucleus_rois_overlay.png, id=88, 138.5175pt x 127.47626pt>
+File: images/example_nucleus_rois_overlay.png Graphic file (type png)
+
+<use images/example_nucleus_rois_overlay.png>
+Package pdftex.def Info: images/example_nucleus_rois_overlay.png used on input 
+line 600.
+(pdftex.def)             Requested size: 82.79846pt x 76.19846pt.
+ [17 <F:/workspace/NuFiDocumentation/images/example_nucleus_rois.png (PNG copy)
+> <F:/workspace/NuFiDocumentation/images/example_nucleus_rois_overlay.png (PNG 
+copy)>] [18]
+(F:\workspace\NuFiDocumentation\document.bbl) [19]
+(F:\workspace\NuFiDocumentation\document.aux) ) 
 Here is how much of TeX's memory you used:
- 5319 strings out of 493921
- 75529 string characters out of 3152096
- 203767 words of memory out of 3000000
- 8559 multiletter control sequences out of 15000+200000
- 10590 words of font info for 37 fonts, out of 3000000 for 9000
+ 5694 strings out of 493921
+ 81240 string characters out of 3152096
+ 210623 words of memory out of 3000000
+ 8921 multiletter control sequences out of 15000+200000
+ 10891 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,8n,38p,256b,2027s stack positions out of 5000i,500n,10000p,200000b,50000s
-<e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><e:/Tools/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb><e:/Tools/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmmi9.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/Tools/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr17.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr6.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Tool
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/Tools/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsl10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><e:/Tools/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><e:/Tools/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmtt10.pfb>
-Output written on document.pdf (17 pages, 4672322 bytes).
+ 36i,9n,38p,256b,2027s stack positions out of 5000i,500n,10000p,200000b,50000s
+<e:/Tools/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmbx10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><e:/Tools/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><e:/Tools/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/Tools/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr6.pfb><e:/Tools/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/
+Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><e:/Tools/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy9.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><e:/To
+ols/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on document.pdf (19 pages, 4761308 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

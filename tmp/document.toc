@@ -3,8 +3,7 @@
 \contentsline {subsection}{\numberline {1.1}Preface}{5}
 \contentsline {subsection}{\numberline {1.2}Objective}{5}
 \contentsline {subsection}{\numberline {1.3}Motivation}{5}
-\contentsline {section}{\numberline {2}Design and Implementation}{6}
-\contentsline {subsection}{\numberline {2.1}Requirements}{6}
+\contentsline {section}{\numberline {2}Requirements}{6}
 \contentsline {section}{\numberline {3}User's Manual}{9}
 \contentsline {subsection}{\numberline {3.1}System Requirements}{9}
 \contentsline {subsection}{\numberline {3.2}Starting the Application}{9}
@@ -17,9 +16,9 @@
 \contentsline {subsection}{\numberline {4.1}Target Detection Procedure}{14}
 \contentsline {subsubsection}{\numberline {4.1.1}Determining Regions of Interest}{14}
 \contentsline {subsubsection}{\numberline {4.1.2}Finding Nucleoli}{15}
-\contentsline {subsection}{\numberline {4.2}Thresholding}{15}
-\contentsline {subsection}{\numberline {4.3}Particle Analysis}{15}
-\contentsline {section}{\numberline {5}Conclusion and Prospect}{16}
-\contentsline {subsection}{\numberline {5.1}Conclusion}{16}
-\contentsline {subsection}{\numberline {5.2}Prospect}{16}
-\contentsline {section}{Bibliography}{17}
+\contentsline {subsection}{\numberline {4.2}Thresholding}{17}
+\contentsline {subsection}{\numberline {4.3}Particle Analysis}{17}
+\contentsline {section}{\numberline {5}Conclusion and Prospect}{18}
+\contentsline {subsection}{\numberline {5.1}Conclusion}{18}
+\contentsline {subsection}{\numberline {5.2}Prospect}{18}
+\contentsline {section}{Bibliography}{19}

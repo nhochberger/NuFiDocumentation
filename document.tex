@@ -1,6 +1,7 @@
 \documentclass[a4paper, 11pt]{article}
 \usepackage[english]{babel}
 \usepackage[ansinew]{inputenc}
+\usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{listings, lstautogobble}
 \usepackage[usenames,dvipsnames]{color}
@@ -43,6 +44,7 @@ title=\lstname                   % show the filename of files included with \lst
 
 \begin{document}
 \bibliographystyle{alphadin}
+\nocite{*}
 
 \title{Detection of Nucleoli Using ImageJ}
 \author{Nico Hochberger}
@@ -90,9 +92,7 @@ finished.
 \end{figure}
 
 \newpage
-\section{Design and Implementation}
-
-\subsection{Requirements}\label{sec:requirements}
+\section{Requirements}\label{sec:requirements}
 The application has to meet the following requirements:
 \begin{itemize}
   \item \textbf{Reliable nucleoli detection:} Stable and reliable detection of
@@ -184,9 +184,15 @@ visualizer has to be stored to a file named
   this will happen on may vary drastically, a versatile and independent way to
   do this is required. The Java framework delivers this possibility. Hence, the
   application will be developed using Java.
+  \item \textbf{Use of an established graphics framework:} In
+  order to keep maintenance effort as small as possible and, in case of
+  potential future development, time it takes the developer to familiarize with
+  the project, as short as possible, an established and well documented graphics
+  framework has to be used. ImageJ meets these requirements and furthermore can
+  be easily used as a library within a Java application.
 \end{itemize}
-\newpage
 
+\newpage
 \section{User's Manual}
 
 \subsection{System Requirements}
@@ -401,12 +407,10 @@ configuration are omitted in favor of more emphasis on image analysis.
 \begin{subfigure}[b]{0.48\textwidth}
 \includegraphics[width=\textwidth]{images/example_Kanal1}
 \caption{Channel 1 example image}
-\label{fig:channel1}
 \end{subfigure}
 \begin{subfigure}[b]{0.48\textwidth}
 \includegraphics[width=\textwidth]{images/example_Kanal3}
 \caption{Channel 3 example image}
-\label{fig:channel1}
 \end{subfigure}
 \caption{Example images of channel 1 and 3}
 \label{fig:example_images}
@@ -426,7 +430,8 @@ images in figure \ref{fig:example_images}.
 \begin{wrapfigure}{R}{0.33\textwidth}
 \vspace{-20pt}
 \includegraphics[width=0.3\textwidth]{images/example_Kanal3_gaussian100}
-\caption{Channel 3 after Gaussian Blur with a radius of 100 pixels was applied}
+\caption{Channel 3 after Gaussian Blur with a radius of 100 pixels has been
+applied}
 \label{fig:example_channel3_gaussian}
 \vspace{-12pt}
 \end{wrapfigure}
@@ -438,7 +443,7 @@ colorization used.
 \begin{wrapfigure}{L}{0.33\textwidth}
 \vspace{-12pt}
 \includegraphics[width=0.3\textwidth]{images/example_Kanal3_multiply178_gaussian2}
-\caption{Channel 3 after brightness correction is performed}
+\caption{Channel 3 after brightness correction has been performed}
 \label{fig:example_channel3_prepared}
 \end{wrapfigure}
 
@@ -479,8 +484,11 @@ in \ref{sec:particle_analysis}. Based on configured values for minimum and
 maximum area a nucleus may cover and minimum circularity, the regions of
 interest are determined. Figure \ref{fig:channel3_rois} shows the result of
 running a particle analysis on figure \ref{fig:channel3_threshold} using a
-minimum area of 8000 pixel$^2$, a maximum area of 12000 pixel$^2$ and a minimum
-circularity of 0.6.
+minimum area of 8000 pixel$^2$, a maximum area of 15000 pixel$^2$ and a minimum
+circularity of 0.6. Obviously, not all nuclei are recognized as reagions of
+interest. In this example, the area of these nuclei are too large or too small.
+If the specimen contains a vast amount of too large or too small nuclei,
+changing the configured minimum and maximum sizes should be adapted. 
 
 The regions of interest determined in this first part of the image analysis are
 the basis of finding nucleoli in the next step. If these regions cannot be
@@ -489,18 +497,118 @@ colorization, the subsequent analysis will not yield feasible results.
 
 See appendix for high resoltion versions of the images used in this section.
 
-\begin{wrapfigure}{L}{0.33\textwidth}
-\vspace{-12pt}
-\includegraphics[width=0.3\textwidth]{images/example_Kanal3_rois}
-\caption{Regions of interest found by Particle Analyzer in thresholded channel
-3 image}
+\begin{figure}[h]
+\centering
+\fbox{\includegraphics[width=0.8\textwidth]{images/example_Kanal3_rois}}
+\caption{Regions of interest found by Particle Analyzer in thresholded channel 3
+image}
 \label{fig:channel3_rois}
-\end{wrapfigure}
+\end{figure}
 
 \subsubsection{Finding Nucleoli}
+Having found the regions of interest, the area which has to be searched is
+drastically reduced. Furthermore, since each region is analyzed separately,
+influence from uneven exposure to light is negligible. Hence, in favor of
+faster execution no further brightness correction is performed while detecting
+nucleoli. The following describes the process by the example of one region of
+interest, e.g. one nucleus. Nonetheless, in the whole process of target
+detection, this process is performed for each region of interest. The example
+nucleus can be seen in figure \ref{fig:example_nucleus}.
+
+\begin{wrapfigure}{R}{0.33\textwidth}
+\vspace{-12pt}
+\includegraphics[width=0.3\textwidth]{images/example_nucleus}
+\caption{Example nucleus}
+\label{fig:example_nucleus}
+\vspace{-12pt}
+\end{wrapfigure}
+
+The first step in order to analyze a single nucleus is to crop the affected
+region as seen in \ref{fig:example_nucleus}. Apparently, the region of interests
+border does not exactly match the boundaries of the nucleus. This is caused by
+the differences in colorization of channel 1 and 3 and by a delay between taking
+the pictures. Furthermore, the colorization of channel 1 causes the boundaries
+of nuclei to be nearly as bright as the nucleoli. Without proper correction
+false-positives are likely to appear on the boundaries. To counter this, the
+extend of the region of interest is shrinked by the configured amount of pixels.
+Additionally, in order to prevent the brightness outside the region of interest,
+all pixels that are not inside the region, are set to black. This results in the
+image depicted in figure \ref{fig:example_nucleus_shrinked_blacked}.
+
+\begin{wrapfigure}{L}{0.33\textwidth}
+\vspace{-12pt}
+\includegraphics[width=0.3\textwidth]{images/example_nucleus_shrinked8_blacked}
+\caption{Region of interest shrinked by 8 pixels, everything outside the region
+is set to black}
+\label{fig:example_nucleus_shrinked_blacked}
+\vspace{-12pt}
+\end{wrapfigure}
+
+After preparing the image of the nucleus like this, the analysis is continued by
+applying an auto determined threshold using ImageJ's auto thresholding
+procedures. In contrast to determining the regions of interest, where all
+thresholding methods lead to comparable results, different methods lead to
+significantly different results when applied here. Figure
+\ref{fig:threshold_comparisson} shows the effects of different thresholding
+methods.
+
+By comparing the results of different thresholding methods applied to numerous
+nuclei found in several pictures, the MaxEntropy method, depicted in figure
+\ref{fig:threshold_maxentropy}, was determined as the most suitable one.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.23\textwidth}
+\includegraphics[width=\linewidth]{images/example_nucleus_threshold_default}
+\caption{Default}
+\end{subfigure}
+\begin{subfigure}[b]{0.23\textwidth}
+\includegraphics[width=\linewidth]{images/example_nucleus_threshold_huang}
+\caption{Huang}
+\end{subfigure}
+\begin{subfigure}[b]{0.23\textwidth}
+\includegraphics[width=\linewidth]{images/example_nucleus_threshold_maxentropy}
+\caption{MaxEntropy}
+\label{fig:threshold_maxentropy}
+\end{subfigure}
+\begin{subfigure}[b]{0.23\textwidth}
+\includegraphics[width=\linewidth]{images/example_nucleus_threshold_shanbhag}
+\caption{Shanbhang}
+\end{subfigure}
+\caption{Comparisson of different thresholding methods}
+\label{fig:threshold_comparisson}
+\end{figure}
+
+Based on the threshold achieved by using the MaxEntropy method, a particle
+analysis is performed similar to the one performed to determine the regions of
+interest, but with parameters that pay respect to the size and shape of nucleoli
+rather than nuclei. Figure \ref{fig:example_nucleus_shrinked_blacked} shows the
+result of an analysis with a minimum size of 80 pixel$^2$, a maximum size of 350
+pixel$^2$ and a minimum circularity of 0.8. Note that the nucleolus on the
+right is not recognized due to the fact that it is smaller than the configured
+minimum size.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.23\textwidth}
+\fboxsep=0.5mm
+\fbox{\includegraphics[width=\textwidth]{images/example_nucleus_rois}}
+\caption{Plain regions of interest}
+\end{subfigure}
+\quad
+\begin{subfigure}[b]{0.23\textwidth}
+\includegraphics[width=\textwidth]{images/example_nucleus_rois_overlay}
+\caption{Regions of interest as overlay}
+\end{subfigure}
+\caption{Regions of interest found by particle analysis}
+\end{figure}
 
 \subsection{Thresholding}\label{sec:thresholding}
-
+Despite the possibility of determining the threshold by hand or, respectively
+newly implement ways of automatically finding a suitable threshold, the
+application relies on ImageJ's AutoThresholder. This ImageJ plugin provides the
+possibility to use different methods to determine the threshold automatically.
+These include methods such as Huang \cite{huang93}, 
 
 \subsection{Particle Analysis}\label{sec:particle_analysis}
 
