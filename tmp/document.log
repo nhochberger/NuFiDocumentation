@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  25 NOV 2014 11:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  25 NOV 2014 14:41
 entering extended mode
 **document.tex
 (F:\workspace\NuFiDocumentation\document.tex
@@ -323,58 +323,50 @@ File: images/example_Kanal3_gaussian100.png Graphic file (type png)
 
 <use images/example_Kanal3_gaussian100.png>
 Package pdftex.def Info: images/example_Kanal3_gaussian100.png used on input li
-ne 427.
-(pdftex.def)             Requested size: 154.79736pt x 115.97621pt.
-
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-436.
-
+ne 428.
+(pdftex.def)             Requested size: 108.0011pt x 80.91734pt.
 
 <images/example_Kanal3_multiply178_gaussian2.png, id=64, 1393.205pt x 1043.9pt>
 File: images/example_Kanal3_multiply178_gaussian2.png Graphic file (type png)
 <use images/example_Kanal3_multiply178_gaussian2.png>
 Package pdftex.def Info: images/example_Kanal3_multiply178_gaussian2.png used o
-n input line 437.
-(pdftex.def)             Requested size: 154.79736pt x 115.97621pt.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 44
-2.
-
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-458.
+n input line 440.
+(pdftex.def)             Requested size: 108.0011pt x 80.91734pt.
 
 <images/example_Kanal3_corrected_threshold.png, id=65, 1393.205pt x 1043.9pt>
 File: images/example_Kanal3_corrected_threshold.png Graphic file (type png)
 
 <use images/example_Kanal3_corrected_threshold.png>
 Package pdftex.def Info: images/example_Kanal3_corrected_threshold.png used on 
-input line 459.
-(pdftex.def)             Requested size: 154.79736pt x 115.97621pt.
+input line 470.
+(pdftex.def)             Requested size: 108.0011pt x 80.91734pt.
  [14 <F:/workspace/NuFiDocumentation/images/example_Kanal3_gaussian100.png (PNG
- copy)>]
-Underfull \hbox (badness 1515) in paragraph at lines 464--470
-[][][]\OT1/cmr/m/n/10.95 Having fin-ished this prepa-ra-tion,
- []
+ copy)> <F:/workspace/NuFiDocumentation/images/example_Kanal3_multiply178_gauss
+ian2.png (PNG copy)>]
+<images/example_Kanal3_rois.png, id=69, 1393.205pt x 1043.9pt>
+File: images/example_Kanal3_rois.png Graphic file (type png)
 
-[15 <F:/workspace/NuFiDocumentation/images/example_Kanal3_multiply178_gaussian2
-.png (PNG copy)> <F:/workspace/NuFiDocumentation/images/example_Kanal3_correcte
-d_threshold.png>] [16] (F:\workspace\NuFiDocumentation\document.bbl
+<use images/example_Kanal3_rois.png>
+Package pdftex.def Info: images/example_Kanal3_rois.png used on input line 494.
+
+(pdftex.def)             Requested size: 108.0011pt x 80.91734pt.
+ [15 <F:/workspace/NuFiDocumentation/images/example_Kanal3_corrected_threshold.
+png>] [16]
+(F:\workspace\NuFiDocumentation\document.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
-) [17] (F:\workspace\NuFiDocumentation\document.aux)
+) [17 <F:/workspace/NuFiDocumentation/images/example_Kanal3_rois.png (PNG copy)
+>] (F:\workspace\NuFiDocumentation\document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5313 strings out of 493921
- 75348 string characters out of 3152096
+ 5319 strings out of 493921
+ 75529 string characters out of 3152096
  203767 words of memory out of 3000000
- 8554 multiletter control sequences out of 15000+200000
+ 8559 multiletter control sequences out of 15000+200000
  10590 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,8n,38p,256b,2027s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -389,9 +381,9 @@ ublic/amsfonts/cm/cmsl10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb><e:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><e:/Tools/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><e:/Tools/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb>
-Output written on document.pdf (17 pages, 4658448 bytes).
+Output written on document.pdf (17 pages, 4672322 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 124 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

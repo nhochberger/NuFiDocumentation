@@ -423,24 +423,27 @@ images in figure \ref{fig:example_images}.
 
 
 \subsubsection{Determining Regions of Interest}
-\begin{wrapfigure}{r}{0.45\textwidth}
-\includegraphics[width=0.43\textwidth]{images/example_Kanal3_gaussian100}
+\begin{wrapfigure}{R}{0.33\textwidth}
+\vspace{-20pt}
+\includegraphics[width=0.3\textwidth]{images/example_Kanal3_gaussian100}
 \caption{Channel 3 after Gaussian Blur with a radius of 100 pixels was applied}
 \label{fig:example_channel3_gaussian}
+\vspace{-12pt}
 \end{wrapfigure}
 
 Finding the regions of interest is performed using only the image referred to as
 channel 3, as this is the image which best shows the nuclei due to the
 colorization used.
 
-\begin{wrapfigure}{l}{0.45\textwidth}
-\includegraphics[width=0.43\textwidth]{images/example_Kanal3_multiply178_gaussian2}
+\begin{wrapfigure}{L}{0.33\textwidth}
+\vspace{-12pt}
+\includegraphics[width=0.3\textwidth]{images/example_Kanal3_multiply178_gaussian2}
 \caption{Channel 3 after brightness correction is performed}
 \label{fig:example_channel3_prepared}
 \end{wrapfigure}
 
 Typically the images show very uneven exposure to light, resulting in the
-necessity of brightness correcting as a very first step. This is achieved by
+necessity of brightness correction as a very first step. This is achieved by
 using a gaussian blur with a radius approximately the size of the objects that
 are supposed to be found, in this example, a value between 100 and 120 yields
 pretty useful results. The result of this operation can be seen in
@@ -455,12 +458,6 @@ this preparation process, a gaussian blur with a small radius, e.g. 2px, is
 applied to the image in order to smooth the edges of the nuclei and to reduce
 noise. The result of these steps can be seen in \ref{fig:example_channel3_prepared}.
 
-\begin{wrapfigure}{r}{0.45\textwidth}
-\includegraphics[width=0.43\textwidth]{images/example_Kanal3_corrected_threshold}
-\caption{Channel 3 with auto threshold applied}
-\label{fig:channel3_threshold}
-\end{wrapfigure}
-
 Having finished this preparation, channel 3 now shows evenly distributed
 brightness and only little variation in these. This makes the following step,
 finding a suitable threshold which is described in detail in
@@ -468,10 +465,37 @@ finding a suitable threshold which is described in detail in
 Figure \ref{fig:channel3_threshold} shows channel 3 after an auto
 default threshold was applied.
 
+\begin{wrapfigure}{R}{0.33\textwidth}
+\vspace{-12pt}
+\includegraphics[width=0.3\textwidth]{images/example_Kanal3_corrected_threshold}
+\caption{Channel 3 with auto threshold applied}
+\label{fig:channel3_threshold}
+\end{wrapfigure}
+
 In the last part of determining the regions of interest, the areas to which the
 threshold applies, e.g. are marked in red, are analyzed using ImageJ's
-Particle Analyzer plugin. Details of how this action is performed are
-explained in \ref{sec:particle_analysis}. 
+Particle Analyzer plugin. Details on how Particle Analyzer works are explained
+in \ref{sec:particle_analysis}. Based on configured values for minimum and
+maximum area a nucleus may cover and minimum circularity, the regions of
+interest are determined. Figure \ref{fig:channel3_rois} shows the result of
+running a particle analysis on figure \ref{fig:channel3_threshold} using a
+minimum area of 8000 pixel$^2$, a maximum area of 12000 pixel$^2$ and a minimum
+circularity of 0.6.
+
+The regions of interest determined in this first part of the image analysis are
+the basis of finding nucleoli in the next step. If these regions cannot be
+properly determined, for example due to low quality images or flawed
+colorization, the subsequent analysis will not yield feasible results.
+
+See appendix for high resoltion versions of the images used in this section.
+
+\begin{wrapfigure}{L}{0.33\textwidth}
+\vspace{-12pt}
+\includegraphics[width=0.3\textwidth]{images/example_Kanal3_rois}
+\caption{Regions of interest found by Particle Analyzer in thresholded channel
+3 image}
+\label{fig:channel3_rois}
+\end{wrapfigure}
 
 \subsubsection{Finding Nucleoli}
 
