@@ -7,10 +7,25 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Gre10]{green10}
+\textsc{Greensted}, Andrew:
+\newblock \emph{Otsu Thresholding}.
+\newblock
+  \url{http://www.labbookpages.co.uk/software/imgProc/otsuThreshold.html}.
+\newblock \,Version:\,2010. --
+\newblock The Lab Book Pages
+
 \bibitem[Hua93]{huang93}
 \textsc{Huang}, Mao-Jiun~J. Gliang-Kai;~Wang~W. Gliang-Kai;~Wang:
 \newblock \emph{IMAGE THRESHOLDING BY MINIMIZING THE MEASURES OF FUZZINESS}.
 \newblock 1993
+
+\bibitem[Lan13]{landini13}
+\textsc{Landini}, Gabriel:
+\newblock \emph{Auto Threshold}.
+\newblock \url{http://fiji.sc/Auto_Threshold}.
+\newblock \,Version:\,2013. --
+\newblock Fiji Manual
 
 \bibitem[Mor00]{morse00}
 \textsc{Morse}, Bryan~S.:

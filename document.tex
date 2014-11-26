@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper, 12pt]{article}
 \usepackage[english]{babel}
 \usepackage[ansinew]{inputenc}
 \usepackage{natbib}
@@ -9,7 +9,10 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{wrapfig}
+\usepackage{fancyhdr}
+
 \pagestyle{headings}
+
 
 \definecolor{codegray}{gray}{0.92}
 \newcommand{\code}[1]{\colorbox{codegray}{\texttt{#1}}}
@@ -20,7 +23,7 @@ basicstyle=\footnotesize,        % the size of the fonts that are used for the c
 breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
 breaklines=true,                 % sets automatic line breaking
 captionpos=b,                    % sets the caption-position to bottom
-commentstyle=\color{green},      % comment style
+commentstyle=\color{OliveGreen},      % comment style
 deletekeywords={...},            % if you want to delete keywords from the given language
 escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
 extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
@@ -41,6 +44,7 @@ stringstyle=\color{mauve},       % string literal style
 tabsize=2,                       % sets default tabsize to 2 spaces
 title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
+
 
 \begin{document}
 \bibliographystyle{alphadin}
@@ -411,6 +415,7 @@ configuration are omitted in favor of more emphasis on image analysis.
 \begin{subfigure}[b]{0.48\textwidth}
 \includegraphics[width=\textwidth]{images/example_Kanal3}
 \caption{Channel 3 example image}
+\label{fig:channel3}
 \end{subfigure}
 \caption{Example images of channel 1 and 3}
 \label{fig:example_images}
@@ -427,25 +432,18 @@ images in figure \ref{fig:example_images}.
 
 
 \subsubsection{Determining Regions of Interest}
-\begin{wrapfigure}{R}{0.33\textwidth}
-\vspace{-20pt}
+
+\begin{wrapfigure}{r}{0.33\textwidth}
+\vspace{-14pt}
 \includegraphics[width=0.3\textwidth]{images/example_Kanal3_gaussian100}
 \caption{Channel 3 after Gaussian Blur with a radius of 100 pixels has been
 applied}
 \label{fig:example_channel3_gaussian}
-\vspace{-12pt}
+\vspace{-28pt}
 \end{wrapfigure}
-
 Finding the regions of interest is performed using only the image referred to as
 channel 3, as this is the image which best shows the nuclei due to the
 colorization used.
-
-\begin{wrapfigure}{L}{0.33\textwidth}
-\vspace{-12pt}
-\includegraphics[width=0.3\textwidth]{images/example_Kanal3_multiply178_gaussian2}
-\caption{Channel 3 after brightness correction has been performed}
-\label{fig:example_channel3_prepared}
-\end{wrapfigure}
 
 Typically the images show very uneven exposure to light, resulting in the
 necessity of brightness correction as a very first step. This is achieved by
@@ -463,6 +461,13 @@ this preparation process, a gaussian blur with a small radius, e.g. 2px, is
 applied to the image in order to smooth the edges of the nuclei and to reduce
 noise. The result of these steps can be seen in \ref{fig:example_channel3_prepared}.
 
+\begin{wrapfigure}{l}{0.33\textwidth}
+\vspace{-14pt}
+\includegraphics[width=0.3\textwidth]{images/example_Kanal3_multiply178_gaussian2}
+\caption{Channel 3 after brightness correction has been performed}
+\label{fig:example_channel3_prepared}
+\end{wrapfigure}
+
 Having finished this preparation, channel 3 now shows evenly distributed
 brightness and only little variation in these. This makes the following step,
 finding a suitable threshold which is described in detail in
@@ -470,8 +475,8 @@ finding a suitable threshold which is described in detail in
 Figure \ref{fig:channel3_threshold} shows channel 3 after an auto
 default threshold was applied.
 
-\begin{wrapfigure}{R}{0.33\textwidth}
-\vspace{-12pt}
+\begin{wrapfigure}{r}{0.33\textwidth}
+\vspace{-14pt}
 \includegraphics[width=0.3\textwidth]{images/example_Kanal3_corrected_threshold}
 \caption{Channel 3 with auto threshold applied}
 \label{fig:channel3_threshold}
@@ -506,6 +511,14 @@ image}
 \end{figure}
 
 \subsubsection{Finding Nucleoli}
+
+\begin{wrapfigure}{l}{0.33\textwidth}
+\vspace{-14pt}
+\includegraphics[width=0.3\textwidth]{images/example_nucleus}
+\caption{Example nucleus}
+\label{fig:example_nucleus}
+\vspace{-28pt}
+\end{wrapfigure}
 Having found the regions of interest, the area which has to be searched is
 drastically reduced. Furthermore, since each region is analyzed separately,
 influence from uneven exposure to light is negligible. Hence, in favor of
@@ -514,14 +527,6 @@ nucleoli. The following describes the process by the example of one region of
 interest, e.g. one nucleus. Nonetheless, in the whole process of target
 detection, this process is performed for each region of interest. The example
 nucleus can be seen in figure \ref{fig:example_nucleus}.
-
-\begin{wrapfigure}{R}{0.33\textwidth}
-\vspace{-12pt}
-\includegraphics[width=0.3\textwidth]{images/example_nucleus}
-\caption{Example nucleus}
-\label{fig:example_nucleus}
-\vspace{-12pt}
-\end{wrapfigure}
 
 The first step in order to analyze a single nucleus is to crop the affected
 region as seen in \ref{fig:example_nucleus}. Apparently, the region of interests
@@ -535,13 +540,12 @@ Additionally, in order to prevent the brightness outside the region of interest,
 all pixels that are not inside the region, are set to black. This results in the
 image depicted in figure \ref{fig:example_nucleus_shrinked_blacked}.
 
-\begin{wrapfigure}{L}{0.33\textwidth}
-\vspace{-12pt}
+\begin{wrapfigure}{r}{0.33\textwidth}
+\vspace{-14pt}
 \includegraphics[width=0.3\textwidth]{images/example_nucleus_shrinked8_blacked}
 \caption{Region of interest shrinked by 8 pixels, everything outside the region
 is set to black}
 \label{fig:example_nucleus_shrinked_blacked}
-\vspace{-12pt}
 \end{wrapfigure}
 
 After preparing the image of the nucleus like this, the analysis is continued by
@@ -615,7 +619,7 @@ region 3 is determined the most suitable choice, which can bee seen in figure
 \begin{figure}
 \centering
 \includegraphics[width=0.3\textwidth]{images/example_nucleus_target}
-\caption{Extract from the result image showing the example nucleus and
+\caption{Extract from the result image showing the example nucleus as well as
 the chosen target}
 \label{fig:example_nucleus_target}
 \end{figure}
@@ -624,8 +628,72 @@ the chosen target}
 Despite the possibility of determining the threshold by hand or, respectively
 newly implement ways of automatically finding a suitable threshold, the
 application relies on ImageJ's AutoThresholder. This ImageJ plugin provides the
-possibility to use different methods to determine the threshold automatically.
-These include methods such as Huang \cite{huang93}, Otsu
+possibility to use different algorithms(also: methods) to determine the
+threshold automatically.
+These include algorithms such as Huang \cite{huang93}, Otsu \cite{green10},
+MaxEntropy \cite{fiji04} and others\footnote{\cite{landini13} provides an
+elaborated overview on the AutoThresholder plugin and the available methods.}.
+
+This sectionis intended to give a brief overview of how thresholding in general
+and the two methods used here, default and MaxEntropy, in particular, work. For
+a more detailed explanation please refer to the cited sources as this is not
+within the scope of this work.
+
+Thresholding is used to simplify image analysis by reducing the information
+contained within the image data. Typically this results in a binary, e.g. black
+and white, image. This is achieved by simply comparing a pixel's (brightness)
+value to a defined value, the threshold. If the pixel's value is below that
+threshold, the value is set to 0 (black), if it is above the threshold, it is
+set to 1 (white). Note that in some cases black and white may be switched in
+order to ease further processing. A very basic approach to do this can be seen
+in the below Java source code:
+
+\begin{lstlisting}[language=Java, caption=Basic thresholding algorithm]
+/*
+width, height refer to the image's width and height
+
+threshold refers to the predefined threshold
+
+image.value(int x, int y) returns the value of the pixel at 
+	position (x, y)
+
+image.setValue(int x, int y, double newValue) sets the value 
+	of the pixel at position (x, y) to newValue
+*/
+
+for (int x = 0; x < width; x++) {
+	for (int y = 0; y < height; y++) {
+		if (threshold > image.value(x, y)) {
+			image.setValue(x, y, 0d);
+		} else {
+			image.setValue(x, y, 1d);
+		}
+	}
+}
+\end{lstlisting}
+
+While this is pretty much the idea behin thresholding, there are several
+sophisticated approaches on how to determine a suitable value to be used as
+threshold based on an image's histogram. Figure \ref{fig:example_histograms}
+shows the histograms of the original channel 3 image as shown in
+\ref{fig:channel3} and the brightness corrected version as shown in figure
+\ref{fig:example_channel3_prepared}. Apparently, finding a suitable threshold is
+much easier in the brightness corrected version of the image.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{images/histogram_original}
+\caption{Original image}
+\end{subfigure}
+\quad
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{images/histogram_brightness_corrected}
+\caption{After brightness correction}
+\end{subfigure}
+\caption{Histograms of channel 3 prior to brightness correction and afterwards}
+\label{fig:example_histograms}
+\end{figure}
 
 \subsection{Particle Analysis}\label{sec:particle_analysis}
 
