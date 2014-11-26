@@ -771,13 +771,14 @@ entropies:
 T_{opt}=Max(H_B(t)+H_W(t)) \quad , \quad t \, \epsilon \, [0, i_{max}]
 \end{align*}
 
-In order to determine the optimal threshold, this algorithm calculates the
-entropies of black and white pixels for each possible threshold, e.g. 256
+In order to determine the optimal threshold, the basic form of this algorithm
+calculates the entropies of black and white pixels for each possible threshold, e.g. 256
 different values for $t$. This might seem extensiv and time-consuming. Yet,
 compared to other operations to be performed while analyzing the image, this is
 put into perspective. Furthermore, the results this algorithms yields when
 applied to images of single nuclei beat that of other algorithms considering
-stability and effectiveness.
+stability and effectiveness. Additionally, the possible values of $t$ can be
+reduced by an analysis of the histogram prior to calculating the analysis.
 
 \subsection{Particle Analysis}\label{sec:particle_analysis}
 
