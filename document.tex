@@ -10,6 +10,7 @@
 \usepackage{subcaption}
 \usepackage{wrapfig}
 \usepackage{fancyhdr}
+\usepackage{amsmath}
 
 \pagestyle{headings}
 
@@ -624,6 +625,17 @@ the chosen target}
 \label{fig:example_nucleus_target}
 \end{figure}
 
+In case no nucleoli are found in a certain nucleus, the application acts on the
+assumption that all nuclei contain at least one nucleolus and thus performs an
+in-depth analysis of the nucleus. This analysis is performed by using different
+thresholds based on the automatically found threshold and the configured width
+of the in-depth analysis. The nucleus will be thresholded with values of
+\code{threshold - inDepthWidth} to \code{threshold - inDepthWidth}. By
+stepwise increasing the threshold's value the possibility of not finding a
+nucleolus due to the fact hat it is just outside the minimum or maximum size
+because of a sub-optimal threshold is reduced. As soon as one nucleolus is
+found, the in-depth analysis is finished.
+
 \subsection{Thresholding}\label{sec:thresholding}
 Despite the possibility of determining the threshold by hand or, respectively
 newly implement ways of automatically finding a suitable threshold, the
@@ -634,17 +646,17 @@ These include algorithms such as Huang \cite{huang93}, Otsu \cite{green10},
 MaxEntropy \cite{fiji04} and others\footnote{\cite{landini13} provides an
 elaborated overview on the AutoThresholder plugin and the available methods.}.
 
-This sectionis intended to give a brief overview of how thresholding in general
+This section is intended to give a brief overview of how thresholding in general
 and the two methods used here, default and MaxEntropy, in particular, work. For
 a more detailed explanation please refer to the cited sources as this is not
 within the scope of this work.
 
 Thresholding is used to simplify image analysis by reducing the information
 contained within the image data. Typically this results in a binary, e.g. black
-and white, image. This is achieved by simply comparing a pixel's (brightness)
-value to a defined value, the threshold. If the pixel's value is below that
-threshold, the value is set to 0 (black), if it is above the threshold, it is
-set to 1 (white). Note that in some cases black and white may be switched in
+and white, image. This may be achieved by simply comparing a pixel's
+(brightness) value to a defined value, the threshold. If the pixel's value is
+below that threshold, the value is set to 0 (black), if it is above, the value
+is set to 1 (white). Note that in some cases black and white may be switched in
 order to ease further processing. A very basic approach to do this can be seen
 in the below Java source code:
 
@@ -672,13 +684,15 @@ for (int x = 0; x < width; x++) {
 }
 \end{lstlisting}
 
-While this is pretty much the idea behin thresholding, there are several
+While this is pretty much the idea behind thresholding, there are several
 sophisticated approaches on how to determine a suitable value to be used as
-threshold based on an image's histogram. Figure \ref{fig:example_histograms}
-shows the histograms of the original channel 3 image as shown in
-\ref{fig:channel3} and the brightness corrected version as shown in figure
-\ref{fig:example_channel3_prepared}. Apparently, finding a suitable threshold is
-much easier in the brightness corrected version of the image.
+threshold based on an image's histogram and assumptions on how pixels are
+related to each other. Figure \ref{fig:example_histograms} shows the histograms
+of the original channel 3 image as shown in \ref{fig:channel3} and the
+brightness corrected version as shown in figure
+\ref{fig:example_channel3_prepared}. Apparently, finding a suitable threshold
+based on the histogram is much easier in the brightness corrected version of
+the image.
 
 \begin{figure}[h]
 \centering
@@ -694,6 +708,76 @@ much easier in the brightness corrected version of the image.
 \caption{Histograms of channel 3 prior to brightness correction and afterwards}
 \label{fig:example_histograms}
 \end{figure}
+
+The thresholding algorithm that is used in ImageJ by the name of
+\textit{default} is basically a slight variation of the IsoData algorithm,
+compare \cite{landini13}, which is also known as \textit{iterative intermeans} described
+in \cite{ridler78}. This iterative algorithm defines an initial threshold as a
+basis for the first itereation, typically half the dynamic range, e.g. 178 if
+the range is 0 to 255. The algorithm then determines the average value of the
+pixels below and above the threshold. The threshold for the next iteration is
+then calculated as the  arithmetic mean of these two values. The algorithm
+terminates when the value does not change anymore. The below source code shows
+a possible implementation of this algorithm:
+
+\begin{lstlisting}[language=Java, caption=Basic thresholding algorithm]
+public int isoDataThreshold(final int[] histogram) {
+	int oldThreshold = 0;
+	int newThreshold = 177;
+	while (Math.abs(newThreshold - oldThreshold) > 1) {
+		oldThreshold = newThreshold;
+		int aboveSum = 0;
+		int belowSum = 0;
+		int aboveCount = 0;
+		int belowCount = 0;
+		for (int value = 0; value <= 255; value++) {
+			final int valueCount = histogram[value];
+			if (value <= oldThreshold) {
+				belowSum += valueCount * value;
+				belowCount += valueCount;
+			} else {
+				aboveSum += valueCount * value;
+				aboveCount += valueCount;
+			}
+		}
+		final int aboveMean = (aboveCount == 0) ? 0 : (aboveSum / aboveCount);
+		final int belowMean = (belowCount == 0) ? 0 : (belowSum / belowCount);
+		newThreshold = (aboveMean + belowMean) / 2;
+	}
+	return newThreshold;
+}
+\end{lstlisting}
+
+The second method used in the application is based on the entropy found in the
+histogram \cite{kapur84}. According to \cite{fiji04} the MaxEntropy threshold of
+a normalized histogram can be calculated as follows:
+\begin{align*}
+\sum_{i=0}^{i_{max}} h(i) = 1
+\end{align*}
+Indicating that the histogram $h$ is normalized, e.g. the sum of all
+values $h(i)$ equals $1$. The entropy  $H_B$ of black pixels is defined as:
+\begin{align*}
+H_B(t) = - \sum_{i=0}^{t} \frac{h(i)}{ \sum_{j=0}^{t} h(j)} log
+\frac{h(i)}{ \sum_{j=0}^{t} h(j)}
+\end{align*}
+while the entropy $H_W$ of white pixels is defined as:
+\begin{align*}
+H_W(t) = - \sum_{i=t+1}^{i_{max}} \frac{h(i)}{ \sum_{j=t+1}^{i_{max}} h(j)} log
+\frac{h(i)}{ \sum_{j=t+1}^{i_{max}} h(j)}
+\end{align*}
+The optimal threshold $T_{opt}$ is defined as the maximum of the sum of these
+entropies:
+\begin{align*}
+T_{opt}=Max(H_B(t)+H_W(t)) \quad , \quad t \, \epsilon \, [0, i_{max}]
+\end{align*}
+
+In order to determine the optimal threshold, this algorithm calculates the
+entropies of black and white pixels for each possible threshold, e.g. 256
+different values for $t$. This might seem extensiv and time-consuming. Yet,
+compared to other operations to be performed while analyzing the image, this is
+put into perspective. Furthermore, the results this algorithms yields when
+applied to images of single nuclei beat that of other algorithms considering
+stability and effectiveness.
 
 \subsection{Particle Analysis}\label{sec:particle_analysis}
 
