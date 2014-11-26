@@ -12,10 +12,17 @@
 \newblock \emph{IMAGE THRESHOLDING BY MINIMIZING THE MEASURES OF FUZZINESS}.
 \newblock 1993
 
-\bibitem[Mor00]{huang00}
+\bibitem[Mor00]{morse00}
 \textsc{Morse}, Bryan~S.:
 \newblock \emph{Lecture 4: Thresholding}.
 \newblock 2000. --
 \newblock Brigham Young University
+
+\bibitem[Sac04]{fiji04}
+\textsc{Sacha}, Jerek:
+\newblock \emph{Maximum Entropy Threshold}.
+\newblock \url{http://fiji.sc/Maximum_Entropy_Threshold}.
+\newblock \,Version:\,2004. --
+\newblock Fiji Manual
 
 \end{thebibliography}
