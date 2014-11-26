@@ -603,6 +603,23 @@ minimum size.
 \caption{Regions of interest found by particle analysis}
 \end{figure}
 
+To determine which of the nucleoli found is the most suitable target, the sizes
+of all nucleoli within one nucleus are compared. In order to ensure high
+accuracy during exposure to radiation later on in the process of analyizing the
+specimen, the largest nucleolus, e.g. covers the largest area, is chosen. Note
+that this will not result in choosing too large objects, since these are ignored
+due to the maximum size defined in particle analysis. In the example nucleus,
+region 3 is determined the most suitable choice, which can bee seen in figure
+\ref{fig:example_nucleus_target}. 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{images/example_nucleus_target}
+\caption{Extract from the result image showing the example nucleus and
+the chosen target}
+\label{fig:example_nucleus_target}
+\end{figure}
+
 \subsection{Thresholding}\label{sec:thresholding}
 Despite the possibility of determining the threshold by hand or, respectively
 newly implement ways of automatically finding a suitable threshold, the

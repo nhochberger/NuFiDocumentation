@@ -16,9 +16,9 @@
 \contentsline {subsection}{\numberline {4.1}Target Detection Procedure}{14}
 \contentsline {subsubsection}{\numberline {4.1.1}Determining Regions of Interest}{14}
 \contentsline {subsubsection}{\numberline {4.1.2}Finding Nucleoli}{15}
-\contentsline {subsection}{\numberline {4.2}Thresholding}{17}
-\contentsline {subsection}{\numberline {4.3}Particle Analysis}{17}
-\contentsline {section}{\numberline {5}Conclusion and Prospect}{18}
-\contentsline {subsection}{\numberline {5.1}Conclusion}{18}
-\contentsline {subsection}{\numberline {5.2}Prospect}{18}
-\contentsline {section}{Bibliography}{19}
+\contentsline {subsection}{\numberline {4.2}Thresholding}{18}
+\contentsline {subsection}{\numberline {4.3}Particle Analysis}{18}
+\contentsline {section}{\numberline {5}Conclusion and Prospect}{19}
+\contentsline {subsection}{\numberline {5.1}Conclusion}{19}
+\contentsline {subsection}{\numberline {5.2}Prospect}{19}
+\contentsline {section}{Bibliography}{20}
