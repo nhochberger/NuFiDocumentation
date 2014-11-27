@@ -798,7 +798,7 @@ represented in a more useful way. For example, if a simple straight line has to
 be detected, the coordinates of the hough space are not x and y coordinates, but
 instead the angle between the line and the x-Axis and its distance to the
 center of coordinates. By doing so, a line in carthesian space can be
-respresented by a single point in Hough space, as seen in
+respresented by a single point in Hough space, as seen in figure 
 \ref{fig:cathesian_hough}.
 
 \begin{figure}[h]
@@ -859,12 +859,13 @@ by the following algorithm:
 \end{algorithmic}
 \end{minipage}% 
 }
+\end{center}
 
 To determine the detected line's distance and angle, that point in Hough space
 which has the overall maximum value has to be found, which can be simply done by
 iterating over the values and comparing them. From that values angle $\alpha$
 and distance $d$ the straight line can be reconstructed in the original
-carthesian coordinate system. This is roughly illustrated in figure
+carthesian coordinate system. This is illustrated in figure
 \ref{fig:example_lines_hough}\footnote{Image taken from
 http://upload.wikimedia.org/wikipedia/commons/1/1c/Hough-example-result-en.png}.
 
@@ -876,7 +877,11 @@ transformation}
 \label{fig:example_lines_hough}
 \end{figure}
 
-\end{center}
+In order to detect circles or arbitrary shapes, other parameters have to be
+found. In the case of (overlapping) circles that are to be detected, Hough space
+would be three dimensional, consisting of the center coordinates and radii of
+the circles. Besides that and corresponding changes, the procedure stays the
+same.
 
 \newpage
 \section{Conclusion and Prospect}
