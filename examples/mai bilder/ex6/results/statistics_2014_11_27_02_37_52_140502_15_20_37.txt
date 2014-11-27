@@ -1,0 +1,59 @@
+Nuclei count: 
+	27
+
+Target count: 
+	4
+
+Nuclei to target ratio: 
+	14.81%
+
+Mean distance: 
+	24.58 pixels
+
+Distances [pixels]: 
+	25.30316185775999
+	17.46424919657298
+	27.613402542968153
+	27.95084971874737
+
+Mean area of detected nuclei: 
+	10551.41 pixel²
+
+Nucleus areas [pixels²]: 
+	6061.0
+	10273.0
+	10226.0
+	9958.0
+	12595.0
+	15342.0
+	11525.0
+	11403.0
+	14413.0
+	10720.0
+	8291.0
+	8666.0
+	11616.0
+	11506.0
+	11720.0
+	4429.0
+	10342.0
+	12303.0
+	8128.0
+	8898.0
+	10110.0
+	14921.0
+	13306.0
+	8875.0
+	9799.0
+	10913.0
+	8549.0
+
+Mean area of detected nucleoli: 
+	93.75 pixel²
+
+Nucleolus areas (of all detected nucleoli) [pixels²]: 
+	97.0
+	81.0
+	78.0
+	119.0
+

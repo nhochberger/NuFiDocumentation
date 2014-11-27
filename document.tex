@@ -52,7 +52,7 @@ title=\lstname                   % show the filename of files included with \lst
 \bibliographystyle{alphadin}
 \nocite{*}
 
-\title{Detection of Nucleoli Using ImageJ}
+\title{Automated Detection of Nucleoli Using ImageJ}
 \author{Nico Hochberger}
 \date{November 2014}
 \maketitle
@@ -888,8 +888,68 @@ same.
 \section{Conclusion and Prospect}
 
 \subsection{Evaluation}
+Evaluation happened on basis of 15 different sets of images taken in May 2014
+which were analyzed using the following settings:
+
+\begin{lstlisting}[caption=Settings used during evaluation]
+nucleus.average = 10000
+nucleus.min.factor = 0.4
+nucleus.max.factor = 2.6
+nucleus.min.circularity = 0.6
+
+nucleolus.average = 100
+nucleolus.min.factor = 0.5
+nucleolus.max.factor = 4
+nucleolus.min.circularity = 0.8
+
+indepth.range = 30
+
+# settings for improved mode
+nucleus.background.blur = 100
+nucleus.thresholding.blur = 3
+nucleus.boundary.width = 5
+
+nucleolus.background.blur = 10
+nucleolus.thresholding.blur = 1
+\end{lstlisting}
+
+This lead to the results shown in \ref{tab:evaluation}. With the success rate
+calculated as $\frac{(\#found - \#wrong)}{(\#found - \#wrong + \#missing)}$.
+Note that all results have been cross-checked and validated by manually
+determining targets in the different images. Hence, the application is compared
+to what a human with good eyesight is able to recognize. Also note that the
+evaluation was run on a computer with an AMD Phenom II X6 1100T processor @
+3.30GHz and 16GB of RAM. Execution times may vary on other systems.
+
+\begin{table}[h]
+\centering
+\begin{tabular} {r | r | r | r | r | r}
+Specimen & Targets & wrong & missing & success rate & time [ms]\\
+\hline
+1 & 15 & 0 & 2 & 88.24\% & 3149\\
+2 & 15 & 0 & 3 & 83.33\% & 3193\\
+3 & 12 & 1 & 2 & 84.62\% & 2763\\
+4 & 9 & 0 & 2 & 81.82\% & 2956\\
+5 & 10 & 2 & 2 & 80.00\% & 2949\\
+6 & 10 & 0 & 3 & 76.92\% & 3246\\
+7 & 10 & 0 & 1 & 90.91\% & 2831\\
+8 & 11 & 0 & 8 & 57.89\% & 2484\\
+9 & 8 & 0 & 1 & 88.89\% & 3074\\
+10 & 17 & 0 & 3 & 85.00\% & 3072\\
+11 & 10 & 0 & 3 & 76.92\% & 2662\\
+12 & 8 & 0 & 5 & 61.54\% & 2835\\
+13 & 6 & 0 & 2 & 75.00\% & 2220\\
+14 & 14 & 1 & 3 & 81.25\% & 2551\\
+15 & 10 & 1 & 2 & 81.82\% & 2746\\
+\hline
+Mean: & 11.00 & 0.33 & 2.80 & 79.61\% & 2848.73\\
+\end{tabular}
+\caption{Evaluation results}
+\label{tab:evaluation}
+\end{table}
 
 \subsection{Conclusion}
+
 
 \subsection{Prospect}
 
