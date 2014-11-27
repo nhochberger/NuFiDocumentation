@@ -11,6 +11,7 @@
 \usepackage{wrapfig}
 \usepackage{fancyhdr}
 \usepackage{amsmath}
+\usepackage{algpseudocode}
 
 \pagestyle{headings}
 
@@ -595,13 +596,13 @@ minimum size.
 
 \begin{figure}[h]
 \centering
-\begin{subfigure}[b]{0.23\textwidth}
+\begin{subfigure}[b]{0.25\textwidth}
 \fboxsep=0.5mm
 \fbox{\includegraphics[width=\textwidth]{images/example_nucleus_rois}}
 \caption{Plain regions of interest}
 \end{subfigure}
 \quad
-\begin{subfigure}[b]{0.23\textwidth}
+\begin{subfigure}[b]{0.25\textwidth}
 \includegraphics[width=\textwidth]{images/example_nucleus_rois_overlay}
 \caption{Regions of interest as overlay}
 \end{subfigure}
@@ -720,33 +721,7 @@ then calculated as the  arithmetic mean of these two values. The algorithm
 terminates when the value does not change anymore. The below source code shows
 a possible implementation of this algorithm:
 
-\begin{lstlisting}[language=Java, caption=Basic thresholding algorithm]
-public int isoDataThreshold(final int[] histogram) {
-	int oldThreshold = 0;
-	int newThreshold = 177;
-	while (Math.abs(newThreshold - oldThreshold) > 1) {
-		oldThreshold = newThreshold;
-		int aboveSum = 0;
-		int belowSum = 0;
-		int aboveCount = 0;
-		int belowCount = 0;
-		for (int value = 0; value <= 255; value++) {
-			final int valueCount = histogram[value];
-			if (value <= oldThreshold) {
-				belowSum += valueCount * value;
-				belowCount += valueCount;
-			} else {
-				aboveSum += valueCount * value;
-				aboveCount += valueCount;
-			}
-		}
-		final int aboveMean = (aboveCount == 0) ? 0 : (aboveSum / aboveCount);
-		final int belowMean = (belowCount == 0) ? 0 : (belowSum / belowCount);
-		newThreshold = (aboveMean + belowMean) / 2;
-	}
-	return newThreshold;
-}
-\end{lstlisting}
+
 
 The second method used in the application is based on the entropy found in the
 histogram \cite{kapur84}. According to \cite{fiji04} the MaxEntropy threshold of
@@ -757,13 +732,14 @@ a normalized histogram can be calculated as follows:
 Indicating that the histogram $h$ is normalized, e.g. the sum of all
 values $h(i)$ equals $1$. The entropy  $H_B$ of black pixels is defined as:
 \begin{align*}
-H_B(t) = - \sum_{i=0}^{t} \frac{h(i)}{ \sum_{j=0}^{t} h(j)} log
-\frac{h(i)}{ \sum_{j=0}^{t} h(j)}
+H_B(t) = - \sum_{i=0}^{t} \Bigg(\frac{h(i)}{ \sum_{j=0}^{t} h(j)}
+log \frac{h(i)}{ \sum_{j=0}^{t} h(j)}\Bigg)
 \end{align*}
 while the entropy $H_W$ of white pixels is defined as:
 \begin{align*}
-H_W(t) = - \sum_{i=t+1}^{i_{max}} \frac{h(i)}{ \sum_{j=t+1}^{i_{max}} h(j)} log
-\frac{h(i)}{ \sum_{j=t+1}^{i_{max}} h(j)}
+H_W(t) = - \sum_{i=t+1}^{i_{max}} \Bigg(\frac{h(i)}{ \sum_{j=t+1}^{i_{max}}
+h(j)} log
+\frac{h(i)}{ \sum_{j=t+1}^{i_{max}} h(j)}\Bigg)
 \end{align*}
 The optimal threshold $T_{opt}$ is defined as the maximum of the sum of these
 entropies:
@@ -781,6 +757,126 @@ stability and effectiveness. Additionally, the possible values of $t$ can be
 reduced by an analysis of the histogram prior to calculating the analysis.
 
 \subsection{Particle Analysis}\label{sec:particle_analysis}
+
+The ImageJ documentation on this topic is rather superficial. Nonetheless, the
+basics of particle detection is some kind of Hough transformation as described
+in \cite{duda71}. Since this is a rather elaborated technique with various
+existing enhancements and modifications, this section will only describe the
+basic technique by the example of detecting straight lines.
+
+Nonetheless, ImageJ's documentation does state that ParticleAnalyzer works with
+the following algorithm:
+
+\begin{center}
+\noindent\fcolorbox{black}{codegray}{%
+\begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+\begin{algorithmic}
+\For {each line}
+	\For{each pixel in this line}
+		\If{pixel value ``inside'' threshold range}
+		
+			\State trace the edge to mark the object
+			
+			\State do measurements
+		
+			\State fill the object with a color outside threshold range
+		\Else
+		
+			\State continue scan
+		\EndIf
+	\EndFor
+\EndFor
+\end{algorithmic}
+\end{minipage}% 
+}
+\end{center}
+
+Where \textit{``trace the edge to mark the object''} may refer to various
+tracing algorithms, for example a Hough transformation. The basic idea behind
+Hough transformations is to find a space in which the same information can be
+represented in a more useful way. For example, if a simple straight line has to
+be detected, the coordinates of the hough space are not x and y coordinates, but
+instead the angle between the line and the x-Axis and its distance to the
+center of coordinates. By doing so, a line in carthesian space can be
+respresented by a single point in Hough space, as seen in
+\ref{fig:cathesian_hough}.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.4\textwidth}
+\fboxsep=0.5mm
+\fbox{
+\includegraphics[width=\textwidth]{images/example_carthesian}
+}
+\caption{Straight line in carthesian coordinates}
+\end{subfigure}
+\quad
+\begin{subfigure}[b]{0.4\textwidth}
+\fboxsep=0.5mm
+\fbox{
+\includegraphics[width=\textwidth]{images/example_hough}
+}
+\caption{Single point in Hough space representing the same line}
+\end{subfigure}
+\caption{The same line represented in carthesian coordinates and in Hough space}
+\label{fig:cathesian_hough}
+\end{figure}
+
+While this is a neat way of representing a straight line with known angle and
+distance to the x-axis, finding a straight line within the data of an image
+requires some more effort. The basic idea behind edge tracing with hough
+transformations is to look at each pixel in the image\footnote{Note that the
+image was thresholded beforehand thus is binary, e.g. only includes black and
+white pixel, by the time the transformation is applied} and, given the pixel has
+the desired foreground value, e.g. white, determines the distance $d$ between
+the coordinate center a straight line for every possible angle $\alpha$ that
+line's normal can enclose with the x-axis by calculating $d(\alpha) = x \cdot
+\cos(\alpha) + y \cdot \sin(\alpha)$ for $\alpha \, \epsilon \, [0, \pi]$. The
+graphs of $d(\alpha)$ for each point are then accumulated. This can be achieved
+by the following algorithm:
+
+\begin{center}
+\noindent\fcolorbox{black}{codegray}{%
+\begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+\begin{algorithmic}
+	\State $maxDistance \gets \sqrt{(\frac{1}{2} \cdot imageHeight)^2 +
+	(\frac{1}{2} \cdot imageWidth)^2}$
+	\State $minDistace \gets -maxDistance$
+	\State $houghSpace[0..\pi][minDistance..maxDistance] \gets 0$
+	\For{each line}
+		\For{each pixel in that line}
+			\If{$pixelValue = 0$}
+				skip that pixel
+			\EndIf
+			\For{$\alpha \gets 0$ to $\pi$}
+				\State $distance \gets x_{pixel} \cdot \cos(\alpha) + y_{pixel} \cdot
+				\sin(\alpha)$ 
+				
+				\State $houghSpace[\alpha][distance]++$ 
+			\EndFor
+		\EndFor
+	\EndFor
+\end{algorithmic}
+\end{minipage}% 
+}
+
+To determine the detected line's distance and angle, that point in Hough space
+which has the overall maximum value has to be found, which can be simply done by
+iterating over the values and comparing them. From that values angle $\alpha$
+and distance $d$ the straight line can be reconstructed in the original
+carthesian coordinate system. This is roughly illustrated in figure
+\ref{fig:example_lines_hough}\footnote{Image taken from
+http://upload.wikimedia.org/wikipedia/commons/1/1c/Hough-example-result-en.png}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/Hough-example-result-en}
+\caption{Example of detecting lines using Hough
+transformation}
+\label{fig:example_lines_hough}
+\end{figure}
+
+\end{center}
 
 \newpage
 \section{Conclusion and Prospect}
