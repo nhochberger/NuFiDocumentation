@@ -105,13 +105,13 @@ The application has to meet the following requirements:
   nucleoli is the main purpose of the application. Hence, it is supposed to
   detect at least 75\% of the nucleoli CellProfiler can detect. This includes
   a certain degree of stability concerning fuzzy pictures or pictures with
-  inequally distributed or diffuse brightnes.
+  unequally distributed or diffuse brightness.
   \item \textbf{Fast analysis:} As the application is tailored to this single
   task, it is expected to detect a suitable amount of nucleoli in only a small
   fraction of the time required by CellProfiler. The topmost time that the
   application may require to complete the analysis of one image is five seconds.
   \item \textbf{Fallback in case of empty nuclei:} Each nucleus is expected to
-  containg at least one nucleolus. Yet, this expectation cannot always be
+  containing at least one nucleolus. Yet, this expectation cannot always be
   fulfilled due to potentially damaged nuclei, fuzzy images, or other reasons.
   In this case, the center of the nucleus has to be provided as fallback target.
   \item \textbf{Visualizer:} In order to quickly check the results directly
@@ -226,7 +226,7 @@ framework should be updated on a regular basis. Note that the requirements may
 change with any update.
 
 \subsection{Starting the Application}
-Starting the application is acoomplished using the command line interface via
+Starting the application is accomplished using the command line interface via
 Java's \code{java -jar} or \code{javaw -jar} command\footnote{See
 https://docs.oracle.com/javase/7/docs/technotes/tools/windows/java.html for
 further details.}. Furthermore, the application expects the configuration file
@@ -252,7 +252,7 @@ convention of source files.
 \begin{itemize}
   \item \textbf{Source folder:} The folder containing the source files (e.g.
   image files) on which the analysis will be based. The source folders are
-  expected to be provided as absolut path or relative to \code{NuFi.jar}.
+  expected to be provided as absolute path or relative to \code{NuFi.jar}.
   
   Note that the application expects exactly three files of the type defined as
   channel filetype. If there are more or less than three files of that type, a
@@ -302,7 +302,7 @@ nucleoli, as well as the width of the in depth-analysis.
   \item \textbf{Size settings:} Since the size of the nuclei and nucleoli in the
   specimen may vary and since the magnification of the microscope used in taking the
   pictures may also change, the size in the photographs may need to be adapted.
-  This can be achieved by giving an average size in sqaure-pixels and the
+  This can be achieved by giving an average size in square-pixels and the
   minimum and maximum sizes as multiples of that size.
   
   \textbf{Keys:}
@@ -325,7 +325,8 @@ nucleoli, as well as the width of the in depth-analysis.
   variation of the objects in their shape. A value of 1 indicates a perfect
   circle, while a 0 indicates that there are no requirements to the shape of the
   object. Since nuclei typically are elliptical in shape, a value of
-  approximatly 0.6 is advised. Nucleoli are typically close to a perfect circle.
+  approximately 0.6 is advised. Nucleoli are typically close to a perfect
+  circle.
   Thus, a value of 0.9 includes most of them while it excludes a variety of
   anomalies and prevents false-positives on nuclei borders.
   
@@ -338,7 +339,7 @@ nucleoli, as well as the width of the in depth-analysis.
   \newline \code{nucleolus.min.circularity = 0.9}
   
   \item \textbf{In-depth width:} This parameter defines the variation in
-  thresholding used during in-depth anylsis.
+  thresholding used during in-depth analysis.
   
   \textbf{Key:}
   \newline \code{indepth.range}
@@ -355,7 +356,7 @@ algorithm. In this section, the parameters required for this algorithm can be
 defined. These include setting for brightness correction
 (\code{<object>.background.blur} and \code{<object>.thresholding.blur}) and the
 value used for correcting discrepancies between channel 3 colorization and the
-acutal size of nuclei (\code{nucleus.boundary.width}).
+actual size of nuclei (\code{nucleus.boundary.width}).
 
 \begin{itemize}
   \item \textbf{Brightness correction:}
@@ -404,7 +405,7 @@ figure \ref{fig:folders}.
 \newpage
 \section{Image Analysis}
 
-In this section the procedure of how the application processes and anlyzes
+In this section the procedure of how the application processes and analyzes
 images is explained. Details such as how the applications checks its
 configuration are omitted in favor of more emphasis on image analysis.
 
@@ -424,7 +425,7 @@ configuration are omitted in favor of more emphasis on image analysis.
 \end{figure}
 
 \subsection{Target Detection Procedure}
-The target detection process can basically devided in two parts. At first, the
+The target detection process can basically divided in two parts. At first, the
 regions of interest are detected using channel 3. These regions are then
 transferred to channel 1 in order to only analyze those regions that may
 actually contain nucleoli.
@@ -473,7 +474,7 @@ noise. The result of these steps can be seen in \ref{fig:example_channel3_prepar
 Having finished this preparation, channel 3 now shows evenly distributed
 brightness and only little variation in these. This makes the following step,
 finding a suitable threshold which is described in detail in
-\ref{sec:thresholding}, easier und much more stable across different images.
+\ref{sec:thresholding}, easier and much more stable across different images.
 Figure \ref{fig:channel3_threshold} shows channel 3 after an auto
 default threshold was applied.
 
@@ -502,7 +503,7 @@ the basis of finding nucleoli in the next step. If these regions cannot be
 properly determined, for example due to low quality images or flawed
 colorization, the subsequent analysis will not yield feasible results.
 
-See appendix for high resoltion versions of the images used in this section.
+See appendix for high resolution versions of the images used in this section.
 
 \begin{figure}[h]
 \centering
@@ -537,7 +538,7 @@ the differences in colorization of channel 1 and 3 and by a delay between taking
 the pictures. Furthermore, the colorization of channel 1 causes the boundaries
 of nuclei to be nearly as bright as the nucleoli. Without proper correction
 false-positives are likely to appear on the boundaries. To counter this, the
-extend of the region of interest is shrinked by the configured amount of pixels.
+extend of the region of interest is shrunk by the configured amount of pixels.
 Additionally, in order to prevent the brightness outside the region of interest,
 all pixels that are not inside the region, are set to black. This results in the
 image depicted in figure \ref{fig:example_nucleus_shrinked_blacked}.
@@ -545,7 +546,7 @@ image depicted in figure \ref{fig:example_nucleus_shrinked_blacked}.
 \begin{wrapfigure}{r}{0.33\textwidth}
 \vspace{-14pt}
 \includegraphics[width=0.3\textwidth]{images/example_nucleus_shrinked8_blacked}
-\caption{Region of interest shrinked by 8 pixels, everything outside the region
+\caption{Region of interest shrunk by 8 pixels, everything outside the region
 is set to black}
 \label{fig:example_nucleus_shrinked_blacked}
 \end{wrapfigure}
@@ -611,7 +612,7 @@ minimum size.
 
 To determine which of the nucleoli found is the most suitable target, the sizes
 of all nucleoli within one nucleus are compared. In order to ensure high
-accuracy during exposure to radiation later on in the process of analyizing the
+accuracy during exposure to radiation later on in the process of analyzing the
 specimen, the largest nucleolus, e.g. covers the largest area, is chosen. Note
 that this will not result in choosing too large objects, since these are ignored
 due to the maximum size defined in particle analysis. In the example nucleus,
@@ -714,7 +715,7 @@ The thresholding algorithm that is used in ImageJ by the name of
 \textit{default} is basically a slight variation of the IsoData algorithm,
 compare \cite{landini13}, which is also known as \textit{iterative intermeans} described
 in \cite{ridler78}. This iterative algorithm defines an initial threshold as a
-basis for the first itereation, typically half the dynamic range, e.g. 178 if
+basis for the first iteration, typically half the dynamic range, e.g. 178 if
 the range is 0 to 255. The algorithm then determines the average value of the
 pixels below and above the threshold. The threshold for the next iteration is
 then calculated as the  arithmetic mean of these two values. The algorithm
@@ -749,7 +750,7 @@ T_{opt}=Max(H_B(t)+H_W(t)) \quad , \quad t \, \epsilon \, [0, i_{max}]
 
 In order to determine the optimal threshold, the basic form of this algorithm
 calculates the entropies of black and white pixels for each possible threshold, e.g. 256
-different values for $t$. This might seem extensiv and time-consuming. Yet,
+different values for $t$. This might seem extensive and time-consuming. Yet,
 compared to other operations to be performed while analyzing the image, this is
 put into perspective. Furthermore, the results this algorithms yields when
 applied to images of single nuclei beat that of other algorithms considering
@@ -795,10 +796,10 @@ Where \textit{``trace the edge to mark the object''} may refer to various
 tracing algorithms, for example a Hough transformation. The basic idea behind
 Hough transformations is to find a space in which the same information can be
 represented in a more useful way. For example, if a simple straight line has to
-be detected, the coordinates of the hough space are not x and y coordinates, but
+be detected, the coordinates of the Hough space are not x and y coordinates, but
 instead the angle between the line and the x-Axis and its distance to the
 center of coordinates. By doing so, a line in carthesian space can be
-respresented by a single point in Hough space, as seen in figure 
+represented by a single point in Hough space, as seen in figure 
 \ref{fig:cathesian_hough}.
 
 \begin{figure}[h]
@@ -886,10 +887,11 @@ same.
 \newpage
 \section{Conclusion and Prospect}
 
+\subsection{Evaluation}
+
 \subsection{Conclusion}
 
 \subsection{Prospect}
-
 
 \newpage
 \addcontentsline{toc}{section}{Bibliography}

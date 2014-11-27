@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  27 NOV 2014 01:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.18)  27 NOV 2014 02:25
 entering extended mode
 **document.tex
 (F:\workspace\NuFiDocumentation\document.tex
@@ -283,7 +283,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.94 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -389,14 +389,14 @@ indows/java.html for
  []
 
 [10] [11]
-Overfull \hbox (47.32861pt too wide) in paragraph at lines 353--359
+Overfull \hbox (47.32861pt too wide) in paragraph at lines 354--360
 \OT1/cmr/m/n/12 de-fined. These in-clude set-ting for bright-ness cor-rec-tion 
 ([][][][][][]
  []
 
 
-Overfull \hbox (114.9213pt too wide) in paragraph at lines 353--359
-\OT1/cmr/m/n/12 crep-an-cies be-tween chan-nel 3 col-oriza-tion and the acu-tal
+Overfull \hbox (114.9213pt too wide) in paragraph at lines 354--360
+\OT1/cmr/m/n/12 crep-an-cies be-tween chan-nel 3 col-oriza-tion and the ac-tual
  size of nu-clei ([][][][][][]). 
  []
 
@@ -404,7 +404,7 @@ Overfull \hbox (114.9213pt too wide) in paragraph at lines 353--359
 File: images/folders_application.png Graphic file (type png)
 
 <use images/folders_application.png>
-Package pdftex.def Info: images/folders_application.png used on input line 382.
+Package pdftex.def Info: images/folders_application.png used on input line 383.
 
 (pdftex.def)             Requested size: 120.45044pt x 120.45016pt.
 
@@ -412,7 +412,7 @@ Package pdftex.def Info: images/folders_application.png used on input line 382.
 File: images/folders_data.png Graphic file (type png)
 
 <use images/folders_data.png>
-Package pdftex.def Info: images/folders_data.png used on input line 383.
+Package pdftex.def Info: images/folders_data.png used on input line 384.
 (pdftex.def)             Requested size: 200.75073pt x 223.41217pt.
  [13 <F:/workspace/NuFiDocumentation/images/folders_application.png (PNG copy)>
  <F:/workspace/NuFiDocumentation/images/folders_data.png (PNG copy)>] [14]
@@ -420,14 +420,14 @@ Package pdftex.def Info: images/folders_data.png used on input line 383.
 File: images/example_Kanal1.png Graphic file (type png)
 
 <use images/example_Kanal1.png>
-Package pdftex.def Info: images/example_Kanal1.png used on input line 414.
+Package pdftex.def Info: images/example_Kanal1.png used on input line 415.
 (pdftex.def)             Requested size: 187.19833pt x 140.25142pt.
 
 <images/example_Kanal3.png, id=63, 1393.205pt x 1043.9pt>
 File: images/example_Kanal3.png Graphic file (type png)
 
 <use images/example_Kanal3.png>
-Package pdftex.def Info: images/example_Kanal3.png used on input line 418.
+Package pdftex.def Info: images/example_Kanal3.png used on input line 419.
 (pdftex.def)             Requested size: 187.19833pt x 140.25142pt.
 
 <images/example_Kanal3_gaussian100.png, id=64, 1393.205pt x 1043.9pt>
@@ -435,7 +435,7 @@ File: images/example_Kanal3_gaussian100.png Graphic file (type png)
 
 <use images/example_Kanal3_gaussian100.png>
 Package pdftex.def Info: images/example_Kanal3_gaussian100.png used on input li
-ne 440.
+ne 441.
 (pdftex.def)             Requested size: 117.00119pt x 87.65514pt.
  [15 <F:/workspace/NuFiDocumentation/images/example_Kanal1.png (PNG copy)> <F:/
 workspace/NuFiDocumentation/images/example_Kanal3.png (PNG copy)> <F:/workspace
@@ -444,30 +444,30 @@ workspace/NuFiDocumentation/images/example_Kanal3.png (PNG copy)> <F:/workspace
 File: images/example_Kanal3_multiply178_gaussian2.png Graphic file (type png)
 <use images/example_Kanal3_multiply178_gaussian2.png>
 Package pdftex.def Info: images/example_Kanal3_multiply178_gaussian2.png used o
-n input line 468.
+n input line 469.
 (pdftex.def)             Requested size: 117.00119pt x 87.65514pt.
 
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-480.
+481.
 
 <images/example_Kanal3_corrected_threshold.png, id=69, 1393.205pt x 1043.9pt>
 File: images/example_Kanal3_corrected_threshold.png Graphic file (type png)
 
 <use images/example_Kanal3_corrected_threshold.png>
 Package pdftex.def Info: images/example_Kanal3_corrected_threshold.png used on 
-input line 482.
+input line 483.
 (pdftex.def)             Requested size: 117.00119pt x 87.65514pt.
 
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 48
-7.
+8.
 
 <images/example_Kanal3_rois.png, id=70, 1393.205pt x 1043.9pt>
 File: images/example_Kanal3_rois.png Graphic file (type png)
 
 <use images/example_Kanal3_rois.png>
-Package pdftex.def Info: images/example_Kanal3_rois.png used on input line 509.
+Package pdftex.def Info: images/example_Kanal3_rois.png used on input line 510.
 
 (pdftex.def)             Requested size: 312.00119pt x 233.76828pt.
 
@@ -476,18 +476,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-517.
+518.
 
 <images/example_nucleus.png, id=71, 138.5175pt x 127.47626pt>
 File: images/example_nucleus.png Graphic file (type png)
 
 <use images/example_nucleus.png>
-Package pdftex.def Info: images/example_nucleus.png used on input line 519.
+Package pdftex.def Info: images/example_nucleus.png used on input line 520.
 (pdftex.def)             Requested size: 117.00119pt x 107.67451pt.
 
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 52
-4.
+5.
 
 [16 <F:/workspace/NuFiDocumentation/images/example_Kanal3_multiply178_gaussian2
 .png (PNG copy)> <F:/workspace/NuFiDocumentation/images/example_Kanal3_correcte
@@ -498,19 +498,14 @@ NG copy)>]
 File: images/example_nucleus_shrinked8_blacked.png Graphic file (type png)
 <use images/example_nucleus_shrinked8_blacked.png>
 Package pdftex.def Info: images/example_nucleus_shrinked8_blacked.png used on i
-nput line 547.
+nput line 548.
 (pdftex.def)             Requested size: 117.00119pt x 107.67451pt.
-
-Underfull \hbox (badness 3209) in paragraph at lines 549--549
-\OT1/cmr/m/n/12 els, ev-ery-thing out-side
- []
-
 
 <images/example_nucleus_threshold_default.png, id=80, 138.5175pt x 127.47626pt>
 File: images/example_nucleus_threshold_default.png Graphic file (type png)
 <use images/example_nucleus_threshold_default.png>
 Package pdftex.def Info: images/example_nucleus_threshold_default.png used on i
-nput line 568.
+nput line 569.
 (pdftex.def)             Requested size: 89.69833pt x 82.5493pt.
 
 <images/example_nucleus_threshold_huang.png, id=81, 138.5175pt x 127.47626pt>
@@ -518,7 +513,7 @@ File: images/example_nucleus_threshold_huang.png Graphic file (type png)
 
 <use images/example_nucleus_threshold_huang.png>
 Package pdftex.def Info: images/example_nucleus_threshold_huang.png used on inp
-ut line 572.
+ut line 573.
 (pdftex.def)             Requested size: 89.69833pt x 82.5493pt.
 
 <images/example_nucleus_threshold_maxentropy.png, id=82, 138.5175pt x 127.47626
@@ -526,7 +521,7 @@ pt>
 File: images/example_nucleus_threshold_maxentropy.png Graphic file (type png)
  <use images/example_nucleus_threshold_maxentropy.png>
 Package pdftex.def Info: images/example_nucleus_threshold_maxentropy.png used o
-n input line 576.
+n input line 577.
 (pdftex.def)             Requested size: 89.69833pt x 82.5493pt.
 
 <images/example_nucleus_threshold_shanbhag.png, id=83, 138.5175pt x 127.47626pt
@@ -534,18 +529,18 @@ n input line 576.
 File: images/example_nucleus_threshold_shanbhag.png Graphic file (type png)
  <use images/example_nucleus_threshold_shanbhag.png>
 Package pdftex.def Info: images/example_nucleus_threshold_shanbhag.png used on 
-input line 581.
+input line 582.
 (pdftex.def)             Requested size: 89.69833pt x 82.5493pt.
 
 <images/example_nucleus_rois.png, id=84, 138.5175pt x 127.47626pt>
 File: images/example_nucleus_rois.png Graphic file (type png)
 
 <use images/example_nucleus_rois.png>
-Package pdftex.def Info: images/example_nucleus_rois.png used on input line 601
+Package pdftex.def Info: images/example_nucleus_rois.png used on input line 602
 .
 (pdftex.def)             Requested size: 97.5pt x 89.72876pt.
 
-Overfull \hbox (3.64523pt too wide) in paragraph at lines 601--602
+Overfull \hbox (3.64523pt too wide) in paragraph at lines 602--603
 [][][] 
  []
 
@@ -554,7 +549,7 @@ File: images/example_nucleus_rois_overlay.png Graphic file (type png)
 
 <use images/example_nucleus_rois_overlay.png>
 Package pdftex.def Info: images/example_nucleus_rois_overlay.png used on input 
-line 606.
+line 607.
 (pdftex.def)             Requested size: 97.5pt x 89.72876pt.
 
 
@@ -571,10 +566,10 @@ File: images/example_nucleus_target.png Graphic file (type png)
 
 <use images/example_nucleus_target.png>
 Package pdftex.def Info: images/example_nucleus_target.png used on input line 6
-23.
+24.
 (pdftex.def)             Requested size: 117.00119pt x 117.60991pt.
 
-Overfull \hbox (2.39882pt too wide) in paragraph at lines 629--639
+Overfull \hbox (2.39882pt too wide) in paragraph at lines 630--640
 \OT1/cmr/m/n/12 val-ues of [][][][][][] to [][][][][][]. By
  []
 
@@ -585,13 +580,13 @@ opy)> <F:/workspace/NuFiDocumentation/images/example_nucleus_target.png>]
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 665.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 666.
  [20]
 <images/histogram_original.png, id=102, 225.84375pt x 126.4725pt>
 File: images/histogram_original.png Graphic file (type png)
 
 <use images/histogram_original.png>
-Package pdftex.def Info: images/histogram_original.png used on input line 701.
+Package pdftex.def Info: images/histogram_original.png used on input line 702.
 (pdftex.def)             Requested size: 155.99762pt x 87.3626pt.
 
 <images/histogram_brightness_corrected.png, id=103, 225.84375pt x 126.4725pt>
@@ -599,7 +594,7 @@ File: images/histogram_brightness_corrected.png Graphic file (type png)
 
 <use images/histogram_brightness_corrected.png>
 Package pdftex.def Info: images/histogram_brightness_corrected.png used on inpu
-t line 706.
+t line 707.
 (pdftex.def)             Requested size: 155.99762pt x 87.3626pt.
  [21 <F:/workspace/NuFiDocumentation/images/histogram_original.png> <F:/workspa
 ce/NuFiDocumentation/images/histogram_brightness_corrected.png>] [22]
@@ -607,10 +602,10 @@ ce/NuFiDocumentation/images/histogram_brightness_corrected.png>] [22]
 File: images/example_carthesian.png Graphic file (type png)
 
 <use images/example_carthesian.png>
-Package pdftex.def Info: images/example_carthesian.png used on input line 810.
+Package pdftex.def Info: images/example_carthesian.png used on input line 811.
 (pdftex.def)             Requested size: 155.99762pt x 156.01154pt.
 
-Overfull \hbox (11.47849pt too wide) in paragraph at lines 810--811
+Overfull \hbox (11.47849pt too wide) in paragraph at lines 811--812
 [][][] 
  []
 
@@ -618,16 +613,16 @@ Overfull \hbox (11.47849pt too wide) in paragraph at lines 810--811
 File: images/example_hough.png Graphic file (type png)
 
 <use images/example_hough.png>
-Package pdftex.def Info: images/example_hough.png used on input line 818.
+Package pdftex.def Info: images/example_hough.png used on input line 819.
 (pdftex.def)             Requested size: 155.99762pt x 156.01154pt.
 
-Overfull \hbox (11.47849pt too wide) in paragraph at lines 818--819
+Overfull \hbox (11.47849pt too wide) in paragraph at lines 819--820
 [][][] 
  []
 
 [23 <F:/workspace/NuFiDocumentation/images/example_carthesian.png> <F:/workspac
 e/NuFiDocumentation/images/example_hough.png>]
-Underfull \hbox (badness 1867) in paragraph at lines 870--870
+Underfull \hbox (badness 1867) in paragraph at lines 871--871
 [][]\OT1/cmr/m/n/10 Image taken from http://upload.wikimedia.org/wikipedia/comm
 ons/1/1c/Hough-
  []
@@ -637,7 +632,7 @@ File: images/Hough-example-result-en.png Graphic file (type png)
 
 <use images/Hough-example-result-en.png>
 Package pdftex.def Info: images/Hough-example-result-en.png used on input line 
-874.
+875.
 (pdftex.def)             Requested size: 390.0pt x 199.49356pt.
  [24 <F:/workspace/NuFiDocumentation/images/Hough-example-result-en.png>] [25] 
 [26]
@@ -688,7 +683,7 @@ amsfonts/cm/cmr8.pfb><E:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb
 ><E:/Tools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Tools/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb><E:/Tools/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmtt12.pfb>
-Output written on document.pdf (27 pages, 4955871 bytes).
+Output written on document.pdf (27 pages, 4956059 bytes).
 PDF statistics:
  193 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
