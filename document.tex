@@ -888,6 +888,7 @@ same.
 \section{Conclusion and Prospect}
 
 \subsection{Evaluation}
+\label{sec:evaluation}
 Evaluation happened on basis of 15 different sets of images taken in May 2014
 which were analyzed using the following settings:
 
@@ -919,7 +920,8 @@ Note that all results have been cross-checked and validated by manually
 determining targets in the different images. Hence, the application is compared
 to what a human with good eyesight is able to recognize. Also note that the
 evaluation was run on a computer with an AMD Phenom II X6 1100T processor @
-3.30GHz and 16GB of RAM. Execution times may vary on other systems.
+3.30GHz and 16GB of RAM. All images had resolutions of 1388 pixel x 1040
+pixel. Execution times may vary on other systems.
 
 \begin{table}[h]
 \centering
@@ -949,12 +951,53 @@ Mean: & 11.00 & 0.33 & 2.80 & 79.61\% & 2848.73\\
 \end{table}
 
 \subsection{Conclusion}
+The application developed during this assignment presents itself as a reliable
+and fast tool to detect nucleoli as targets. Nonetheless, there is still plenty
+of potential for improvements concerning stability of the results and execution
+speed, which will make the application even more reliable and useful.
 
+During the first test in operating conditions, serious shortcomings were
+revealed when flawed colorization lead to extremely bright and thick nucleus
+boundaries. Though situations like this can be overcome by increasing the amount
+of pixels by which regions of interest are shrunk before the nuclei are
+analyzed, the application should be able to handle them itself.
+
+Furthermore, while the applied measures of brightness correction are a great way
+to deal with uneven exposure to light, the application still has serious issues
+with images that show distinct fuzziness. In case the analyzed channel 3 image
+if too fuzzy, this might even result in too few or even false targets to be
+detect even though channel 1 shows a perfectly clear image. This also shows the
+application's dependence of a good image of channel 3, as the whole process of
+target detection strongly depends on reliable determination of regions of
+interest in this image. Later versions should be able to double check the
+results gained from analysis of channel 3 images. Probably later versions a
+capable of using information from channel 2 images to detect the regions of
+interest as well.
+
+A major hindrance while developing the application was posed by ImageJ itself.
+As the most common way of using ImageJ seems to be as a stand-alone application,
+most expansions and use-cases are developed as plug-ins. This leads to the
+majority of documentation being created for this way of development. Using
+ImageJ as a library in another application seems to be performed very scarcely.
+Hence, most parts of ImageJ's API are only documented rudimentarily. Thus, lots
+of trial and error development and reading (partially cryptic) source code and
+commentaries was necessary, which drastically slowed down development speed.
+
+Despite the mentioned shortcomings, based on the exemplary data provided in
+\ref{sec:evaluation} and the experiences made during tests, the application fulfills the requirements
+specified in \ref{sec:requirements} to a satisfying extent and in some aspects
+even exceeds them. Thus, the project can be considered as a success.
+
+In addition, though it might not be a perfectly user-optimized library, ImageJ
+still is a suitable choice to work as a basis for image analysis. Considering
+the fact that ImageJ2 will be released in 2015, which among other
+objectives, aims at providing better documentations and developer resources,
+ImageJ might become an even better choice in the future.
 
 \subsection{Prospect}
 
 \newpage
-\addcontentsline{toc}{section}{Bibliography}
+\addcontentsline{}{section}{Bibliography}
 \bibliography{sources}
 
 \end{document}
