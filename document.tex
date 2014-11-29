@@ -75,21 +75,24 @@ title=\lstname                   % show the filename of files included with \lst
 
 \subsection{Motivation}
 Currently nucleoli are detected using an application called
-CellProfiler\footnote{http://www.cellprofiler.org}. While this application
-yields reliable results, it also takes pretty long to complete the analysis.
-Runtimes up to 45 seconds are common.
+CellProfiler\footnote{http://www.cellprofiler.org}. This application yields good
+and reliable results. Though, it requires a huge amount of time to deliver
+these results. For the analysis of a single set of images execution times of up
+to 45 seconds are common.
 
-Due to the fact that CellProfiler is a very general approach, applicable to a
-large variety of tasks related to detecting nuclei and nucleoli, the results of
-its analysis have to be checked manually to reduce the amount of
-false-positives.
+Another drawback of the currently used application is its lack of ways to easily
+manipulate the way images are analyzed. Despite providing kind of a scripting
+environment by which users are capable of defining the analysis procedure, the
+range of available functionality is limited and does not cover all situations.
 
-- TODO -
-
-Consequently, this leads to a more specialized way of analyzing the cells, which
-does not do all the analysis performed by CellProfiler, but on the other hand is
-much faster and thus helps to prevent cells dying before the analysis is
-finished.
+These two points raise the demand for a faster solution that is more tailored to
+the specific task but on the other hand provides a quick way to adapt the
+procedure to features of the currently examined specimen. Furthermore, execution
+speed has to be increased significantly. This is mainly due to the fact that the
+examination includes utilization of a large scale machinery to accelerate
+particles towards microscopic specimen. In this environment even small changes
+to the conditions of the surrounding (e.g. temperature, position of the live
+specimen) are capable of distorting the results.
 
 \begin{figure}[h]
 \includegraphics[width=\linewidth]{images/cellprofiler_channel1}
