@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt]{article}
+\documentclass[a4paper, 12pt, twoside]{article}
 \usepackage[english]{babel}
 \usepackage[ansinew]{inputenc}
 \usepackage{natbib}
@@ -49,6 +49,7 @@ title=\lstname                   % show the filename of files included with \lst
 
 
 \begin{document}
+
 \bibliographystyle{alphadin}
 \nocite{*}
 
@@ -58,12 +59,19 @@ title=\lstname                   % show the filename of files included with \lst
 \maketitle
 
 \newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+\renewcommand{\contentsname}{Table of Contents}
 \tableofcontents
 
 \newpage
+\addcontentsline{toc}{section}{List of Figures}
 \listoffigures
 
 \newpage
+\addcontentsline{toc}{section}{List of Tables}
 \listoftables
 
 \newpage
@@ -328,7 +336,8 @@ convention of source files.
   \newline \code{channel.filetype = png}
   \newline \code{channel.filetype = jpg}
 \end{itemize}
-\subsection{General Picture Analysis Settings}
+
+\subsubsection{General Picture Analysis Settings}
 This section contains information of the expected size and shape of nuclei and
 nucleoli, as well as the width of the in depth-analysis.
 
@@ -1047,7 +1056,60 @@ even further reducing the execution time by using multithreading and
 parallelization techniques are certainly worth thinking about.
 
 \newpage
-\addcontentsline{}{section}{Bibliography}
+\addcontentsline{toc}{section}{Bibliography}
 \bibliography{sources}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+\appendix
+
+\section{Statistics File}
+\lstinputlisting[caption = Example statistics file]{examples/statistics.txt}
+
+\newpage
+\section{Configuration}
+\lstinputlisting[caption = Example configuration file]{examples/test.txt}
+
+\newpage
+\section{High Resolution Images}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=\linewidth, angle=90]{images/example_Kanal1}
+Example channel 1 image
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=\linewidth, angle=90]{images/example_Kanal3}
+Example channel 3 image
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=\linewidth, angle=90]{images/example_Kanal3_gaussian100}
+Example background brightness
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=\linewidth, angle=90]{images/example_Kanal3_multiply178_gaussian2}
+Example brightness corrected channel 3 image
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=\linewidth, angle=90]{images/example_Kanal3_corrected_threshold}
+Example thresholded channel 3 image
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=\linewidth, angle=90]{images/example_Kanal3_rois}
+ROIs gained from analyzing a channel 3 image
+\end{figure}
 
 \end{document}

@@ -1,23 +1,29 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Introduction}{5}
-\contentsline {subsection}{\numberline {1.1}Preface}{5}
-\contentsline {subsection}{\numberline {1.2}Motivation and Objective}{5}
-\contentsline {section}{\numberline {2}Requirements}{7}
-\contentsline {section}{\numberline {3}User's Manual}{10}
-\contentsline {subsection}{\numberline {3.1}System Requirements}{10}
-\contentsline {subsection}{\numberline {3.2}Starting the Application}{10}
-\contentsline {subsection}{\numberline {3.3}Configuration}{10}
-\contentsline {subsubsection}{\numberline {3.3.1}General Parameters}{10}
-\contentsline {subsection}{\numberline {3.4}General Picture Analysis Settings}{12}
-\contentsline {subsubsection}{\numberline {3.4.1}Improved Image Detection Parameters}{13}
-\contentsline {subsection}{\numberline {3.5}Structure of Files and Folders}{13}
-\contentsline {section}{\numberline {4}Image Analysis}{15}
-\contentsline {subsection}{\numberline {4.1}Target Detection Procedure}{15}
-\contentsline {subsubsection}{\numberline {4.1.1}Determining Regions of Interest}{15}
-\contentsline {subsubsection}{\numberline {4.1.2}Finding Nucleoli}{17}
-\contentsline {subsection}{\numberline {4.2}Thresholding}{20}
-\contentsline {subsection}{\numberline {4.3}Particle Analysis}{22}
-\contentsline {section}{\numberline {5}Conclusion and Prospect}{26}
-\contentsline {subsection}{\numberline {5.1}Evaluation}{26}
-\contentsline {subsection}{\numberline {5.2}Conclusion}{26}
-\contentsline {subsection}{\numberline {5.3}Prospect}{28}
+\contentsline {section}{List of Figures}{4}
+\contentsline {section}{List of Tables}{5}
+\contentsline {section}{\numberline {1}Introduction}{6}
+\contentsline {subsection}{\numberline {1.1}Preface}{6}
+\contentsline {subsection}{\numberline {1.2}Motivation and Objective}{6}
+\contentsline {section}{\numberline {2}Requirements}{8}
+\contentsline {section}{\numberline {3}User's Manual}{11}
+\contentsline {subsection}{\numberline {3.1}System Requirements}{11}
+\contentsline {subsection}{\numberline {3.2}Starting the Application}{11}
+\contentsline {subsection}{\numberline {3.3}Configuration}{11}
+\contentsline {subsubsection}{\numberline {3.3.1}General Parameters}{11}
+\contentsline {subsubsection}{\numberline {3.3.2}General Picture Analysis Settings}{13}
+\contentsline {subsubsection}{\numberline {3.3.3}Improved Image Detection Parameters}{14}
+\contentsline {subsection}{\numberline {3.4}Structure of Files and Folders}{14}
+\contentsline {section}{\numberline {4}Image Analysis}{16}
+\contentsline {subsection}{\numberline {4.1}Target Detection Procedure}{16}
+\contentsline {subsubsection}{\numberline {4.1.1}Determining Regions of Interest}{16}
+\contentsline {subsubsection}{\numberline {4.1.2}Finding Nucleoli}{18}
+\contentsline {subsection}{\numberline {4.2}Thresholding}{21}
+\contentsline {subsection}{\numberline {4.3}Particle Analysis}{23}
+\contentsline {section}{\numberline {5}Conclusion and Prospect}{27}
+\contentsline {subsection}{\numberline {5.1}Evaluation}{27}
+\contentsline {subsection}{\numberline {5.2}Conclusion}{27}
+\contentsline {subsection}{\numberline {5.3}Prospect}{29}
+\contentsline {section}{Bibliography}{30}
+\contentsline {section}{\numberline {A}Statistics File}{32}
+\contentsline {section}{\numberline {B}Configuration}{34}
+\contentsline {section}{\numberline {C}High Resolution Images}{35}
